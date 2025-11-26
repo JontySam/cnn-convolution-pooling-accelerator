@@ -1,0 +1,269 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -nets
+        -max_paths 1
+        -transition_time
+        -capacitance
+Design : full_chip_conv_pool
+Version: U-2022.12-SP5
+Date   : Fri May  9 04:09:14 2025
+****************************************
+
+Operating Conditions: tt0p8v25c   Library: N16ADFP_StdCelltt0p8v25c_ccs
+Wire Load Model Mode: segmented
+
+  Startpoint: conv_kernel_1[55]
+              (input port clocked by CLK)
+  Endpoint: conv_pool_inst/c1_10_regx0x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  full_chip_conv_pool ZeroWireload         N16ADFP_StdCelltt0p8v25c_ccs
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                    Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                    0.00       0.00
+  clock network delay (ideal)                                              0.00       0.00
+  input external delay                                                     0.02       0.02 r
+  conv_kernel_1[55] (in)                                         0.06      0.03       0.05 r
+  conv_kernel_1[55] (net)                   38         0.03                0.00       0.05 r
+  conv_pool_inst/conv_kernel_1[55] (conv_pool)                             0.00       0.05 r
+  conv_pool_inst/conv_kernel_1[55] (net)               0.03                0.00       0.05 r
+  conv_pool_inst/U3323/A1 (XOR2D2BWP16P90)                       0.06      0.00       0.05 r
+  conv_pool_inst/U3323/Z (XOR2D2BWP16P90)                        0.01      0.03       0.09 r
+  conv_pool_inst/n2934 (net)                 1         0.00                0.00       0.09 r
+  conv_pool_inst/U3263/A2 (ND2D4BWP16P90LVT)                     0.01      0.00       0.09 r
+  conv_pool_inst/U3263/ZN (ND2D4BWP16P90LVT)                     0.04      0.02       0.11 f
+  conv_pool_inst/n18173 (net)               37         0.03                0.00       0.11 f
+  conv_pool_inst/U8746/A1 (OAI22D1BWP16P90)                      0.04      0.00       0.11 f
+  conv_pool_inst/U8746/ZN (OAI22D1BWP16P90)                      0.03      0.02       0.13 r
+  conv_pool_inst/n4041 (net)                 3         0.00                0.00       0.13 r
+  conv_pool_inst/U6916/I (INVD1BWP20P90)                         0.03      0.00       0.13 r
+  conv_pool_inst/U6916/ZN (INVD1BWP20P90)                        0.01      0.01       0.15 f
+  conv_pool_inst/n3530 (net)                 1         0.00                0.00       0.15 f
+  conv_pool_inst/U9218/CI (FA1D1BWP16P90)                        0.01      0.00       0.15 f
+  conv_pool_inst/U9218/CO (FA1D1BWP16P90)                        0.02      0.03       0.18 f
+  conv_pool_inst/n4035 (net)                 1         0.00                0.00       0.18 f
+  conv_pool_inst/U9408/B (FA1D1BWP16P90)                         0.02      0.00       0.18 f
+  conv_pool_inst/U9408/S (FA1D1BWP16P90)                         0.02      0.05       0.23 r
+  conv_pool_inst/n4009 (net)                 2         0.00                0.00       0.23 r
+  conv_pool_inst/U18162/B (MAOI222D1BWP20P90LVT)                 0.02      0.00       0.23 r
+  conv_pool_inst/U18162/ZN (MAOI222D1BWP20P90LVT)                0.02      0.01       0.24 f
+  conv_pool_inst/n22024 (net)                1         0.00                0.00       0.24 f
+  conv_pool_inst/U18161/I (CKND2BWP16P90)                        0.02      0.00       0.24 f
+  conv_pool_inst/U18161/ZN (CKND2BWP16P90)                       0.01      0.01       0.25 r
+  conv_pool_inst/n4110 (net)                 1         0.00                0.00       0.25 r
+  conv_pool_inst/U9423/A (FA1D1BWP16P90)                         0.01      0.00       0.25 r
+  conv_pool_inst/U9423/S (FA1D1BWP16P90)                         0.02      0.04       0.29 f
+  conv_pool_inst/n4102 (net)                 1         0.00                0.00       0.29 f
+  conv_pool_inst/U7930/A (FA1D1BWP16P90)                         0.02      0.00       0.29 f
+  conv_pool_inst/U7930/CO (FA1D1BWP16P90)                        0.01      0.03       0.32 f
+  conv_pool_inst/n4236 (net)                 1         0.00                0.00       0.32 f
+  conv_pool_inst/U6273/CI (FA1D1BWP16P90)                        0.01      0.00       0.32 f
+  conv_pool_inst/U6273/CO (FA1D1BWP16P90)                        0.02      0.03       0.35 f
+  conv_pool_inst/n4295 (net)                 1         0.00                0.00       0.35 f
+  conv_pool_inst/U9494/B (FA1D1BWP16P90)                         0.02      0.00       0.35 f
+  conv_pool_inst/U9494/CO (FA1D1BWP16P90)                        0.02      0.03       0.38 f
+  conv_pool_inst/n4300 (net)                 1         0.00                0.00       0.38 f
+  conv_pool_inst/U6913/B (FA1D1BWP16P90)                         0.02      0.00       0.38 f
+  conv_pool_inst/U6913/CO (FA1D1BWP16P90)                        0.01      0.03       0.41 f
+  conv_pool_inst/n4375 (net)                 2         0.00                0.00       0.41 f
+  conv_pool_inst/U5122/A1 (NR2D1BWP16P90)                        0.01      0.00       0.41 f
+  conv_pool_inst/U5122/ZN (NR2D1BWP16P90)                        0.02      0.02       0.43 r
+  conv_pool_inst/n4439 (net)                 3         0.00                0.00       0.43 r
+  conv_pool_inst/U2809/A1 (NR2D1BWP16P90)                        0.02      0.00       0.43 r
+  conv_pool_inst/U2809/ZN (NR2D1BWP16P90)                        0.01      0.01       0.44 f
+  conv_pool_inst/n4380 (net)                 2         0.00                0.00       0.44 f
+  conv_pool_inst/U2686/A2 (ND2D1BWP16P90)                        0.01      0.00       0.44 f
+  conv_pool_inst/U2686/ZN (ND2D1BWP16P90)                        0.01      0.01       0.45 r
+  conv_pool_inst/n21633 (net)                1         0.00                0.00       0.45 r
+  conv_pool_inst/U2657/B (OAI211D1BWP16P90LVT)                   0.01      0.00       0.45 r
+  conv_pool_inst/U2657/ZN (OAI211D1BWP16P90LVT)                  0.01      0.01       0.46 f
+  conv_pool_inst/n4383 (net)                 1         0.00                0.00       0.46 f
+  conv_pool_inst/U18156/B (AOI21D2BWP16P90LVT)                   0.01      0.00       0.46 f
+  conv_pool_inst/U18156/ZN (AOI21D2BWP16P90LVT)                  0.01      0.01       0.47 r
+  conv_pool_inst/n4385 (net)                 1         0.00                0.00       0.47 r
+  conv_pool_inst/U17720/B (OAI21D4BWP16P90LVT)                   0.01      0.00       0.47 r
+  conv_pool_inst/U17720/ZN (OAI21D4BWP16P90LVT)                  0.01      0.01       0.48 f
+  conv_pool_inst/n4462 (net)                 3         0.01                0.00       0.48 f
+  conv_pool_inst/U2146/A1 (CKNR2D2BWP16P90)                      0.01      0.00       0.48 f
+  conv_pool_inst/U2146/ZN (CKNR2D2BWP16P90)                      0.01      0.01       0.49 r
+  conv_pool_inst/n22020 (net)                1         0.00                0.00       0.49 r
+  conv_pool_inst/U2088/A1 (XOR2D1BWP16P90LVT)                    0.01      0.00       0.49 r
+  conv_pool_inst/U2088/Z (XOR2D1BWP16P90LVT)                     0.01      0.02       0.51 f
+  conv_pool_inst/n4470 (net)                 1         0.00                0.00       0.51 f
+  conv_pool_inst/U16020/A3 (ND3D4BWP16P90LVT)                    0.01      0.00       0.51 f
+  conv_pool_inst/U16020/ZN (ND3D4BWP16P90LVT)                    0.01      0.01       0.52 r
+  conv_pool_inst/n21585 (net)                1         0.00                0.00       0.52 r
+  conv_pool_inst/U16004/A3 (OAI31D4BWP16P90LVT)                  0.01      0.00       0.52 r
+  conv_pool_inst/U16004/ZN (OAI31D4BWP16P90LVT)                  0.02      0.01       0.53 f
+  conv_pool_inst/n19309 (net)                8         0.01                0.00       0.53 f
+  conv_pool_inst/U13271/A1 (ND2D1BWP20P90)                       0.02      0.00       0.53 f
+  conv_pool_inst/U13271/ZN (ND2D1BWP20P90)                       0.01      0.01       0.54 r
+  conv_pool_inst/n69 (net)                   1         0.00                0.00       0.54 r
+  conv_pool_inst/c1_10_regx0x/D (DFQD2BWP16P90)                  0.01      0.00       0.54 r
+  data arrival time                                                                   0.54
+
+  clock CLK (rise edge)                                                    0.55       0.55
+  clock network delay (ideal)                                              0.00       0.55
+  conv_pool_inst/c1_10_regx0x/CP (DFQD2BWP16P90)                           0.00       0.55 r
+  library setup time                                                      -0.01       0.54
+  data required time                                                                  0.54
+  -------------------------------------------------------------------------------------------
+  data required time                                                                  0.54
+  data arrival time                                                                  -0.54
+  -------------------------------------------------------------------------------------------
+  slack (MET)                                                                         0.00
+
+
+  Startpoint: conv_pool_inst/pool_address_regx0x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: output_addr_0[0]
+            (output port clocked by CLK)
+  Path Group: output
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  full_chip_conv_pool ZeroWireload         N16ADFP_StdCelltt0p8v25c_ccs
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                          Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                          0.00       0.00
+  clock network delay (ideal)                                                    0.00       0.00
+  conv_pool_inst/pool_address_regx0x/CP (DFQD1BWP20P90)                0.00      0.00       0.00 r
+  conv_pool_inst/pool_address_regx0x/Q (DFQD1BWP20P90)                 0.03      0.06       0.06 f
+  conv_pool_inst/output_addr_1[0] (net)            4         0.01                0.00       0.06 f
+  conv_pool_inst/U6045/I (CKBD1BWP20P90)                               0.03      0.00       0.06 f
+  conv_pool_inst/U6045/Z (CKBD1BWP20P90)                               0.02      0.02       0.08 f
+  conv_pool_inst/output_addr_0[0] (net)            1         0.00                0.00       0.08 f
+  conv_pool_inst/output_addr_0[0] (conv_pool)                                    0.00       0.08 f
+  output_addr_0[0] (net)                                     0.00                0.00       0.08 f
+  output_addr_0[0] (out)                                               0.02      0.00       0.08 f
+  data arrival time                                                                         0.08
+
+  clock CLK (rise edge)                                                          0.55       0.55
+  clock network delay (ideal)                                                    0.00       0.55
+  output external delay                                                         -0.06       0.49
+  data required time                                                                        0.49
+  -------------------------------------------------------------------------------------------------
+  data required time                                                                        0.49
+  data arrival time                                                                        -0.08
+  -------------------------------------------------------------------------------------------------
+  slack (MET)                                                                               0.41
+
+
+  Startpoint: conv_pool_inst/lat_tile_regx21x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: conv_pool_inst/c2_00_regx5x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  full_chip_conv_pool ZeroWireload         N16ADFP_StdCelltt0p8v25c_ccs
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  conv_pool_inst/lat_tile_regx21x/CP (DFQD2BWP16P90)                0.00      0.00       0.00 r
+  conv_pool_inst/lat_tile_regx21x/Q (DFQD2BWP16P90)                 0.07      0.08       0.08 f
+  conv_pool_inst/n22538 (net)                  24         0.05                0.00       0.08 f
+  conv_pool_inst/U4757/A1 (XOR2D1BWP20P90)                          0.07      0.00       0.08 f
+  conv_pool_inst/U4757/Z (XOR2D1BWP20P90)                           0.01      0.03       0.11 r
+  conv_pool_inst/n11206 (net)                   2         0.00                0.00       0.11 r
+  conv_pool_inst/U12721/B1 (OAI22D1BWP16P90)                        0.01      0.00       0.11 r
+  conv_pool_inst/U12721/ZN (OAI22D1BWP16P90)                        0.03      0.02       0.13 f
+  conv_pool_inst/n10927 (net)                   1         0.00                0.00       0.13 f
+  conv_pool_inst/U7119/B (FA1D1BWP20P90)                            0.03      0.00       0.13 f
+  conv_pool_inst/U7119/S (FA1D1BWP20P90)                            0.02      0.05       0.19 r
+  conv_pool_inst/n10959 (net)                   1         0.00                0.00       0.19 r
+  conv_pool_inst/U12743/A (FA1D1BWP16P90)                           0.02      0.00       0.19 r
+  conv_pool_inst/U12743/S (FA1D1BWP16P90)                           0.02      0.04       0.23 f
+  conv_pool_inst/n11530 (net)                   1         0.00                0.00       0.23 f
+  conv_pool_inst/U13049/B (FA1D1BWP16P90)                           0.02      0.00       0.23 f
+  conv_pool_inst/U13049/CO (FA1D1BWP16P90)                          0.01      0.03       0.26 f
+  conv_pool_inst/n10972 (net)                   1         0.00                0.00       0.26 f
+  conv_pool_inst/U1519/CI (FA1D1BWP20P90)                           0.01      0.00       0.26 f
+  conv_pool_inst/U1519/CO (FA1D1BWP20P90)                           0.02      0.03       0.29 f
+  conv_pool_inst/n11306 (net)                   1         0.00                0.00       0.29 f
+  conv_pool_inst/U1472/CI (FA1D1BWP20P90)                           0.02      0.00       0.29 f
+  conv_pool_inst/U1472/CO (FA1D1BWP20P90)                           0.02      0.04       0.33 f
+  conv_pool_inst/n12057 (net)                   3         0.00                0.00       0.33 f
+  conv_pool_inst/U4986/A1 (OR2D1BWP16P90)                           0.02      0.00       0.33 f
+  conv_pool_inst/U4986/Z (OR2D1BWP16P90)                            0.01      0.02       0.35 f
+  conv_pool_inst/n21951 (net)                   1         0.00                0.00       0.35 f
+  conv_pool_inst/U18058/A1 (AO22D2BWP16P90LVT)                      0.01      0.00       0.35 f
+  conv_pool_inst/U18058/Z (AO22D2BWP16P90LVT)                       0.01      0.01       0.36 f
+  conv_pool_inst/n12132 (net)                   1         0.00                0.00       0.36 f
+  conv_pool_inst/U1435/CI (FA1D1BWP16P90)                           0.01      0.00       0.36 f
+  conv_pool_inst/U1435/S (FA1D1BWP16P90)                            0.01      0.04       0.40 r
+  conv_pool_inst/n12162 (net)                   2         0.00                0.00       0.40 r
+  conv_pool_inst/U1481/I (INVD1BWP16P90)                            0.01      0.00       0.40 r
+  conv_pool_inst/U1481/ZN (INVD1BWP16P90)                           0.01      0.01       0.41 f
+  conv_pool_inst/n22375 (net)                   1         0.00                0.00       0.41 f
+  conv_pool_inst/U3508/A3 (XNR3D2BWP20P90LVT)                       0.01      0.00       0.41 f
+  conv_pool_inst/U3508/ZN (XNR3D2BWP20P90LVT)                       0.01      0.03       0.44 r
+  conv_pool_inst/n12315 (net)                   2         0.00                0.00       0.44 r
+  conv_pool_inst/U2811/A1 (CKNR2D4BWP16P90)                         0.01      0.00       0.44 r
+  conv_pool_inst/U2811/ZN (CKNR2D4BWP16P90)                         0.01      0.01       0.45 f
+  conv_pool_inst/n12348 (net)                   3         0.00                0.00       0.45 f
+  conv_pool_inst/U2746/A1 (CKNR2D4BWP16P90)                         0.01      0.00       0.45 f
+  conv_pool_inst/U2746/ZN (CKNR2D4BWP16P90)                         0.01      0.01       0.46 r
+  conv_pool_inst/n12368 (net)                   3         0.01                0.00       0.46 r
+  conv_pool_inst/U18366/I (CKND2BWP16P90)                           0.01      0.00       0.46 r
+  conv_pool_inst/U18366/ZN (CKND2BWP16P90)                          0.01      0.01       0.47 f
+  conv_pool_inst/n22222 (net)                   1         0.00                0.00       0.47 f
+  conv_pool_inst/U2658/A2 (OAI21D2BWP16P90LVT)                      0.01      0.00       0.47 f
+  conv_pool_inst/U2658/ZN (OAI21D2BWP16P90LVT)                      0.01      0.01       0.47 r
+  conv_pool_inst/n22220 (net)                   1         0.00                0.00       0.47 r
+  conv_pool_inst/U2634/A1 (XNR2D2BWP16P90LVT)                       0.01      0.00       0.47 r
+  conv_pool_inst/U2634/ZN (XNR2D2BWP16P90LVT)                       0.01      0.02       0.49 r
+  conv_pool_inst/n21385 (net)                   3         0.00                0.00       0.49 r
+  conv_pool_inst/U17809/B1 (IND2D2BWP20P90LVT)                      0.01      0.00       0.49 r
+  conv_pool_inst/U17809/ZN (IND2D2BWP20P90LVT)                      0.00      0.01       0.50 f
+  conv_pool_inst/n21933 (net)                   1         0.00                0.00       0.50 f
+  conv_pool_inst/U2184/I (CKND1BWP16P90)                            0.00      0.00       0.50 f
+  conv_pool_inst/U2184/ZN (CKND1BWP16P90)                           0.01      0.01       0.51 r
+  conv_pool_inst/n21821 (net)                   1         0.00                0.00       0.51 r
+  conv_pool_inst/U17894/A3 (NR3D4BWP16P90LVT)                       0.01      0.00       0.51 r
+  conv_pool_inst/U17894/ZN (NR3D4BWP16P90LVT)                       0.01      0.01       0.51 f
+  conv_pool_inst/n12388 (net)                   1         0.00                0.00       0.51 f
+  conv_pool_inst/U17771/A1 (ND3D4BWP16P90LVT)                       0.01      0.00       0.51 f
+  conv_pool_inst/U17771/ZN (ND3D4BWP16P90LVT)                       0.01      0.01       0.52 r
+  conv_pool_inst/n15536 (net)                   2         0.01                0.00       0.52 r
+  conv_pool_inst/U17770/B1 (IND2D4BWP16P90LVT)                      0.01      0.00       0.52 r
+  conv_pool_inst/U17770/ZN (IND2D4BWP16P90LVT)                      0.01      0.01       0.53 f
+  conv_pool_inst/n21364 (net)                   5         0.00                0.00       0.53 f
+  conv_pool_inst/U1738/A1 (ND2D1BWP16P90)                           0.01      0.00       0.53 f
+  conv_pool_inst/U1738/ZN (ND2D1BWP16P90)                           0.01      0.01       0.53 r
+  conv_pool_inst/n58 (net)                      1         0.00                0.00       0.53 r
+  conv_pool_inst/c2_00_regx5x/D (DFQD1BWP20P90)                     0.01      0.00       0.53 r
+  data arrival time                                                                      0.53
+
+  clock CLK (rise edge)                                                       0.55       0.55
+  clock network delay (ideal)                                                 0.00       0.55
+  conv_pool_inst/c2_00_regx5x/CP (DFQD1BWP20P90)                              0.00       0.55 r
+  library setup time                                                         -0.02       0.53
+  data required time                                                                     0.53
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     0.53
+  data arrival time                                                                     -0.53
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+1
+chint078

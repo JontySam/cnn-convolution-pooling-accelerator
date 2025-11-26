@@ -1,0 +1,58 @@
+## Synopsys user-defined setup file for project directory ##
+
+############################################################
+# Set search_path
+set_app_var search_path [concat $search_path /home/vlsilab2/TSMCHOME/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/CCS/ /home/vlsilab2/TSMCHOME/Executable_Package/Collaterals/IP/stdio/N16ADFP_StdIO/NLDM/]
+###########################################################
+# Set Target Library & Min Versions for each target library
+#set target_library "saed32rvt_ss0p95v125c.db saed32hvt_ss0p95v125c.db saed32lvt_ss0p95v125c.db saed32io_wb_ss0p95v125c_2p25v.db"
+set_app_var target_library "N16ADFP_StdCelltt0p8v25c_ccs.db N16ADFP_StdIOtt0p8v1p8v25c.db"
+#set_app_var synthetic_library dw_foundation.sldb
+
+#set_min_library saed32rvt_ss0p95v125c.db -min_version saed32rvt_ff0p95vn40c.db
+#set_min_library saed32hvt_ss0p95v125c.db -min_version saed32hvt_ff0p95vn40c.db
+#set_min_library saed32lvt_ss0p95v125c.db -min_version saed32lvt_ff0p95vn40c.db
+#set_min_library saed32io_wb_ss0p95v125c_2p25v.db -min_version saed32io_wb_ss0p95vn40c_2p25v.db
+
+##########################################################
+# Set-up pointer to Milkyway Reference Libraries
+set mw_reference_library [list \
+			    /home/vlsilab2/TSMCHOME/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/MILKYWAY/cell_frame_VHV_0d5_0/N16ADFP_StdCell/ \
+			    /home/vlsilab2/TSMCHOME/Executable_Package/Collaterals/IP/stdio/N16ADFP_StdIO/MILKWAY/cell_frame/N16ADFP_StdIO]
+
+###########################################################
+# Set Link Library & Power model preference
+set_app_var link_library "* $target_library"
+
+
+#set_app_var power_model_preference ccs
+
+   
+###########################################################
+# Prepare work/log directories
+file mkdir "./work"
+
+echo "\n\nLibrary Settings:"
+echo "========================================"
+echo "search_path:     \"$search_path\""
+echo "link_library:    \"$link_library\""
+echo "target_library:  \"$target_library\""
+echo "mw_reference_library:  \"$mw_reference_library\""
+echo "========================================\n\n"
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# General setup
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+file delete -force "./logs"
+file mkdir "./logs"
+
+# Create log files with datestamp
+set timestamp [clock format [clock scan now] -format "%Y-%m-%d_%H-%M"]
+set sh_output_log_file "./logs/${synopsys_program_name}.log.$timestamp"
+set sh_command_log_file "./logs/${synopsys_program_name}.cmd.$timestamp"
+
+#################################
+# Supress unwanted warnings in the log
+
+suppress_message CMD-041

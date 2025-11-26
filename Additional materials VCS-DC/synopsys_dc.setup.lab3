@@ -1,0 +1,33 @@
+## Synopsys user-defined setup file for project directory ##
+
+#set_app_var search_path [concat $search_path /home/vlsilab/synopsys/SAED32_EDK/lib/stdcell_rvt/db_ccs/]
+set_app_var search_path [concat $search_path /home/vlsilab2/TSMCHOME/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/CCS/]
+
+set_app_var synthetic_library dw_foundation.sldb
+#set_app_var target_library "saed32rvt_tt1p05v125c.db"
+set_app_var target_library "N16ADFP_StdCelltt0p8v25c_ccs.db"
+set_app_var link_library "* $target_library $synthetic_library"
+set_app_var symbol_library ""
+   
+file mkdir "./work"
+#banoop define_design_lib WORK -path /home/class/ganga023/labs/lab3/work
+define_design_lib WORK -path /home/class/anoop004/ta_ee5327/lab3/work
+
+echo "\n\nLibrary Settings:"
+echo "========================================"
+echo "search_path:     \"$search_path\""
+echo "link_library:    \"$link_library\""
+echo "target_library:  \"$target_library\""
+echo "========================================\n\n"
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# General setup
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+file delete -force "./logs"
+file mkdir "./logs"
+
+# Create log files with datestamp
+set timestamp [clock format [clock scan now] -format "%Y-%m-%d_%H-%M"]
+set sh_output_log_file "./logs/${synopsys_program_name}.log.$timestamp"
+set sh_command_log_file "./logs/${synopsys_program_name}.cmd.$timestamp"

@@ -1,0 +1,11 @@
+Command: /home/class/chint078/labs/Project_5949682_MS1/PostSynthesis_simulation/./simv -l Postsynthesis_simulation.log
+Chronologic VCS simulator copyright 1991-2021
+Contains Synopsys proprietary information.
+Compiler version S-2021.09-SP2-7; Runtime version S-2021.09-SP2-7;  May  8 17:12 2025
+All blocks passed for all kernels!
+$finish called from file "tb_conv_pool.sv", line 189.
+$finish at simulation time               262152
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 262152 ps
+CPU Time:     23.650 seconds;       Data structure size:   2.9Mb
+Thu May  8 17:13:27 2025

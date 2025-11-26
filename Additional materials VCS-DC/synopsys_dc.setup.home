@@ -1,0 +1,4 @@
+## Synopsys user-defined setup file for home directory ##
+
+set_app_var designer "your_name"
+set_app_var company "your_company"

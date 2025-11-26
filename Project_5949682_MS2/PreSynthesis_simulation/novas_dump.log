@@ -1,0 +1,254 @@
+#######################################################################################
+# log primitive debug message of FSDB dumping                                         #
+# This is for R&D to analyze when there are issues happening when FSDB dump           #
+#######################################################################################
+ANF: vcsd_get_serial_mode_status('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vcsd_get_serial_mode_status')
+ANF: vcsd_enable_sva_success_callback('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vcsd_enable_sva_success_callback')
+ANF: vcsd_disable_sva_success_callback('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vcsd_disable_sva_success_callback')
+ANF: vcsd_get_power_scope_name('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vcsd_get_power_scope_name')
+ANF: vcsd_begin_no_value_var_info('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vcsd_begin_no_value_var_info')
+ANF: vcsd_end_no_value_var_info('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vcsd_end_no_value_var_info')
+ANF: vcsd_remove_xprop_merge_mode_callback('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vcsd_remove_xprop_merge_mode_callback')
+ANF: vcsd_clone_vpi('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vcsd_clone_vpi')
+ANF: vhpi_get_cb_info('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhpi_get_cb_info')
+ANF: vhpi_free_handle('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhpi_free_handle')
+ANF: vhpi_fetch_vcsd_handle('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhpi_fetch_vcsd_handle')
+ANF: vhpi_fetch_vpi_handle('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhpi_fetch_vpi_handle')
+ANF: vhpi_has_verilog_parent('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhpi_has_verilog_parent')
+ANF: vhpi_is_verilog_scope('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhpi_is_verilog_scope')
+ANF: scsd_xprop_is_enabled('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: scsd_xprop_is_enabled')
+ANF: scsd_xprop_sig_is_promoted('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: scsd_xprop_sig_is_promoted')
+ANF: scsd_xprop_int_xvalue('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: scsd_xprop_int_xvalue')
+ANF: scsd_xprop_bool_xvalue('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: scsd_xprop_bool_xvalue')
+ANF: scsd_xprop_enum_xvalue('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: scsd_xprop_enum_xvalue')
+ANF: scsd_xprop_register_merge_mode_cb('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: scsd_xprop_register_merge_mode_cb')
+ANF: scsd_xprop_delete_merge_mode_cb('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: scsd_xprop_delete_merge_mode_cb')
+ANF: scsd_xprop_get_merge_mode('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: scsd_xprop_get_merge_mode')
+ANF: scsd_thread_get_info('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: scsd_thread_get_info')
+ANF: scsd_thread_vc_init('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: scsd_thread_vc_init')
+ANF: scsd_master_set_delta_sync_cbk('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: scsd_master_set_delta_sync_cbk')
+ANF: scsd_fgp_get_fsdb_cores('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: scsd_fgp_get_fsdb_cores')
+ANF: scsd_fgp_get_is_cpu_affinity_disabled('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: scsd_fgp_get_is_cpu_affinity_disabled')
+ANF: vdi_get_taint_var_name('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vdi_get_taint_var_name')
+ANF: vhdi_dt_get_type('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_dt_get_type')
+ANF: vhdi_dt_get_key('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_dt_get_key')
+ANF: vhdi_dt_get_vhdl_enum_info('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_dt_get_vhdl_enum_info')
+ANF: vhdi_dt_get_vhdl_physical_info('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_dt_get_vhdl_physical_info')
+ANF: vhdi_dt_get_vhdl_array_info('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_dt_get_vhdl_array_info')
+ANF: vhdi_dt_get_vhdl_record_info('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_dt_get_vhdl_record_info')
+ANF: vhdi_dt_get_vhdl_integer_range_info('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_dt_get_vhdl_integer_range_info')
+ANF: vhdi_def_traverse_module('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_def_traverse_module')
+ANF: vhdi_def_traverse_scope('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_def_traverse_scope')
+ANF: vhdi_def_traverse_variable('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_def_traverse_variable')
+ANF: vhdi_def_get_module_id_by_vhpi('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_def_get_module_id_by_vhpi')
+ANF: vhdi_def_get_handle_by_module_id('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_def_get_handle_by_module_id')
+ANF: vhdi_def_get_variable_info_by_vhpi('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_def_get_variable_info_by_vhpi')
+ANF: vhdi_def_free('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_def_free')
+ANF: vhdi_ist_traverse_scope('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_ist_traverse_scope')
+ANF: vhdi_ist_traverse_variable('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_ist_traverse_variable')
+ANF: vhdi_ist_convert_by_vhpi('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_ist_convert_by_vhpi')
+ANF: vhdi_ist_clone('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_ist_clone')
+ANF: vhdi_ist_free('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_ist_free')
+ANF: vhdi_ist_hash_key('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_ist_hash_key')
+ANF: vhdi_ist_compare('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_ist_compare')
+ANF: vhdi_ist_get_value_addr('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_ist_get_value_addr')
+ANF: vhdi_set_scsd_callback('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_set_scsd_callback')
+ANF: vhdi_cbk_set_force_callback('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_cbk_set_force_callback')
+ANF: vhdi_trigger_init_force('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_trigger_init_force')
+ANF: vhdi_ist_check_scsd_callback('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_ist_check_scsd_callback')
+ANF: vhdi_ist_add_scsd_callback('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_ist_add_scsd_callback')
+ANF: vhdi_ist_remove_scsd_callback('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_ist_remove_scsd_callback')
+ANF: vhdi_ist_get_scsd_user_data('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_ist_get_scsd_user_data')
+ANF: vhdi_add_time_change_callback('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_add_time_change_callback')
+ANF: vhdi_get_real_value_by_value_addr('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_get_real_value_by_value_addr')
+ANF: vhdi_get_64_value_by_value_addr('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_get_64_value_by_value_addr')
+ANF: vhdi_xprop_inst_is_promoted('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_xprop_inst_is_promoted')
+ANF: vdi_ist_convert_by_vhdi('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vdi_ist_convert_by_vhdi')
+ANF: vhdi_ist_get_module_id('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_ist_get_module_id')
+ANF: vhdi_refine_foreign_scope_type('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_refine_foreign_scope_type')
+ANF: vhdi_flush_callback('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_flush_callback')
+ANF: vhdi_set_orig_name('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_set_orig_name')
+ANF: vhdi_set_dump_pt('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_set_dump_pt')
+ANF: vhdi_set_int_subtype('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_set_int_subtype')
+ANF: vhdi_get_fsdb_option('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_get_fsdb_option')
+ANF: vhdi_fgp_get_mode('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_fgp_get_mode')
+ANF: vhdi_node_register_composite_var('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_node_register_composite_var')
+ANF: vhdi_node_analysis('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_node_analysis')
+ANF: vhdi_node_id('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_node_id')
+ANF: vhdi_node_ist_check_scsd_callback('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_node_ist_check_scsd_callback')
+ANF: vhdi_node_ist_add_scsd_callback('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_node_ist_add_scsd_callback')
+ANF: vhdi_node_ist_get_value_addr('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_node_ist_get_value_addr')
+ANF: vhdi_enc_def_traverse_module('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_enc_def_traverse_module')
+ANF: vhdi_enc_def_traverse_scope('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_enc_def_traverse_scope')
+ANF: vhdi_enc_def_traverse_variable('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_enc_def_traverse_variable')
+ANF: vhdi_enc_ist_traverse_scope('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_enc_ist_traverse_scope')
+ANF: vhdi_enc_ist_traverse_variable('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_enc_ist_traverse_variable')
+ANF: vhdi_enc_ist_get_module_id('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_enc_ist_get_module_id')
+ANF: vhdi_enc_def_get_handle_by_module_id('/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv: undefined symbol: vhdi_enc_def_get_handle_by_module_id')
+VCS compile option:
+ option[0]: /home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv
+ option[1]: -sml=verdi
+ option[2]: +UVM_VERDI_TRACE=UVM_AWARE
+ option[3]: +fsdb+gate=off
+ option[4]: -ucli2Proc
+ option[5]: -ucli
+ option[6]: -l
+ option[7]: /home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/verdiLog/sim.log
+ option[8]: /home/vlsilab/synopsys/vcs/linux/bin/vcs1
+ option[9]: -Mcc=gcc
+ option[10]: -Mcplusplus=g++
+ option[11]: -Masflags=--32
+ option[12]: -Mcfl= -pipe -m32 -O -I/home/vlsilab/synopsys/vcs/include 
+ option[13]: -Mxllcflags=
+ option[14]: -Mxcflags= -pipe -m32 -I/home/vlsilab/synopsys/vcs/include
+ option[15]: -Mldflags= -m32 -m32 -rdynamic 
+ option[16]: -Mout=simv
+ option[17]: -Mamsrun=
+ option[18]: -Mvcsaceobjs=
+ option[19]: -Mobjects= /home/vlsilab/synopsys/vcs/linux/lib/libvirsim.so /home/vlsilab/synopsys/vcs/linux/lib/liberrorinf.so /home/vlsilab/synopsys/vcs/linux/lib/libsnpsmalloc.so /home/vlsilab/synopsys/vcs/linux/lib/libvfs.so 
+ option[20]: -Mexternalobj=
+ option[21]: -Msaverestoreobj=/home/vlsilab/synopsys/vcs/linux/lib/vcs_save_restore_new.o
+ option[22]: -Mcrt0=
+ option[23]: -Mcrtn=
+ option[24]: -Mcsrc=
+ option[25]: -Mupdate
+ option[26]: -Msyslibs=/home/vlsilab/synopsys/verdi/share/PLI/VCS/LINUX/pli.a /home/vlsilab/synopsys/vcs/linux/lib/ctype-stubs_32.a -ldl 
+ option[27]: -debug_access+all
+ option[28]: +vpi
+ option[29]: +vcsd1
+ option[30]: +itf+/home/vlsilab/synopsys/vcs/linux/lib/vcsdp_lite.tab
+ option[31]: -kdb
+ option[32]: -Xufe=2steps
+ option[33]: -picarchive
+ option[34]: -P
+ option[35]: /home/vlsilab/synopsys/verdi/share/PLI/VCS/LINUX/verdi.tab
+ option[36]: -fsdb
+ option[37]: -sverilog
+ option[38]: -gen_obj
+ option[39]: conv_pool.sv
+ option[40]: tb_conv_pool.sv
+ option[41]: -load
+ option[42]: /home/vlsilab/synopsys/verdi/share/PLI/VCS/LINUX/libnovas.so:FSDBDumpCmd
+Chronologic Simulation VCS Release S-2021.09-SP2-7
+Linux 3.10.0-1160.95.1.el7.x86_64 #1 SMP Fri Jun 23 08:44:55 EDT 2023 x86_64
+CPU cores: 32
+Limit information:
+======================================
+cputime		unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		8192 kbytes
+coredumpsize		0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		4096
+memorylocked		64 kbytes
+maxproc		4096
+======================================
+(Special)Runtime environment variables:
+
+Cannot get runtime environment variables: environ is NULL
+Runtime command line arguments:
+argv[0]=/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv
+argv[1]=-sml=verdi
+argv[2]=+UVM_VERDI_TRACE=UVM_AWARE
+argv[3]=+fsdb+gate=off
+argv[4]=-ucli2Proc
+argv[5]=-ucli
+argv[6]=-l
+argv[7]=/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/verdiLog/sim.log
+159 profile - 100
+          CPU/Mem usage: 0.030 sys,  0.060 user,  168.75M mem
+160 Elapsed time:    0:00:01    Fri May  9 03:40:52 2025
+161 User CPU time used: 0 seconds
+162 System CPU time used: 0 seconds
+163 pliAppInit
+164 ndpGetenv(FSDB_FILE): /home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/inter.fsdb
+165 ndpGetenv(FSDB_SVA_STATUS): 1
+166 ndpGetenv(FSDB_VHDL_PROTECTED): 1
+167 [SC]Init: MemoryConsumed=0.00MB ElapsedTime=0hour 0min. 0sec.
+168 FSDB_GATE & FSDB_RTL is disabled.
+169 FSDB_ALIAS_ARRAY_ELEM is set to 4294967295.
+170 Enable Parallel Dumping.
+171 pliAppMiscSet: New Sim Round
+172 pliEntryInit
+173 LIBSSCORE=found /home/vlsilab/synopsys/verdi/share/PLI/lib/LINUX/libsscore_vcs202109.so through $NOVAS_HOME setting.
+174 FSDB Dumper for VCS, Release Verdi_T-2022.06-SP2-1, Linux, 01/12/2023
+175 (C) 1996 - 2023 by Synopsys, Inc.
+176 sps_tcl_fsdbDumpfile_main at 0
+177 argv[0]: /home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/inter.fsdb
+178 *Verdi* : Create FSDB file '/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/inter.fsdb'
+179 [spi_vcs_vd_ppi_create_root]: no upf option
+180 compile option from '/home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/simv.daidir/vcs_rebuild'.
+181   "vcs '-Mupdate' '-sverilog' '-debug_access+all' '-kdb' 'conv_pool.sv' 'tb_conv_pool.sv' 2>&1"
+182 sps_tcl_fsdbDumpflush_vd_main at 0 : N/A(0)
+183 *Verdi* : Flush all FSDB Files at 0 ps.
+184 sps_tcl_fsdbDumpflush_vd_main at 0 : N/A(0)
+185 *Verdi* : Flush all FSDB Files at 0 ps.
+186 DVDI_is_vir_unload_enabled is enable
+187 FSDB_VCS_ENABLE_VC_TIME_CB is enable
+188 sps_tcl_fsdbDumpvars_vd_main
+189 argv[0]: 1
+190 argv[1]: tb_conv_pool.dut
+191 argv[2]: +all
+192 argv[3]: +trace_process
+193 *Verdi* : Begin traversing the scope (tb_conv_pool.dut), layer (1).
+194 *Verdi* : Enable +trace_process and +all dumping.
+195 *Verdi* : End of traversing.
+196 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.050 sys,  0.080 user,  264.59M mem
+                   incr: 0.000 sys,  0.000 user,  3.27M mem
+                   accu: 0.000 sys,  0.000 user,  3.27M mem
+              accu incr: 0.000 sys,  0.000 user,  3.27M mem
+
+          Count usage: 45 var,  45 idcode,  45 callback
+                 incr: 45 var,  45 idcode,  45 callback
+                 accu: 45 var,  45 idcode,  45 callback
+            accu incr: 45 var,  45 idcode,  45 callback
+197 Elapsed time:    0:00:07    Fri May  9 03:40:58 2025
+198 User CPU time used: 0 seconds
+199 System CPU time used: 0 seconds
+200 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.050 sys,  0.080 user,  265.64M mem
+                   incr: 0.000 sys,  0.000 user,  1.05M mem
+                   accu: 0.000 sys,  0.000 user,  4.32M mem
+              accu incr: 0.000 sys,  0.000 user,  1.05M mem
+
+          Count usage: 45 var,  45 idcode,  45 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 45 var,  45 idcode,  45 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+201 Elapsed time:    0:00:07    Fri May  9 03:40:58 2025
+202 User CPU time used: 0 seconds
+203 System CPU time used: 0 seconds
+204 sps_tcl_fsdbDumpflush_vd_main at 0 : N/A(0)
+205 *Verdi* : Flush all FSDB Files at 0 ps.
+206 sps_tcl_fsdbDumpflush_vd_main at 72095925 : N/A(0)
+207 *Verdi* : Flush all FSDB Files at 72,095,925 ps.
+208 End of simulation at 72095925
+209 Memory usage: 304.083 M
+210 Maximum resident set size: 147 MB
+211 Hard page faults: 4
+212 Soft page faults: 35518
+213 Elapsed time:    0:17:00    Fri May  9 03:57:51 2025
+214 User CPU time used: 15 seconds
+215 System CPU time used: 4 seconds
+216 Begin FSDB profile info:
+217 FSDB Writer : bc1(1441837) bcn(1837129) mtf/stf(0/4)
+FSDB Writer elapsed time : flush(0.862891) io wait(0.000000) theadpool wait(0.000000)
+FSDB Writer cpu time : MT Compression : 0
+218 End FSDB profile info
+219 FSDB closed. Name: /home/class/chint078/labs/Project_5949682_MS2/PreSynthesis_simulation/inter.fsdb Size: 459565058228
+220 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
+221                      - BlockUsed:21 Acquire:3541088 BufferUsed:36070406
+222                      - Flush:7 Expand:0 ProducerWait:0 ConsumerWait:19
+223                      - MainProducerTime:19.137097503 TotalConsumerTime:0.717244244
+224                      - ElapsedTime:1019.231256000
+225 Producer   0 profile - BlockUsed:21 Acquire:3541088 BufferUsed:36070406
+226 Consumer   0 profile - Affinity:-1 CPUTime:0.717244244 LifeTime:997.057114792 (0.00%)
+227                      - BlockUsed:21 Acquire:3541088 BufferUsed:36070406
+228 SimExit
+229 Elapsed time:    0:17:00    Fri May  9 03:57:51 2025
+230 User CPU time used: 15 seconds
+231 System CPU time used: 4 seconds
+232 Sim process exit

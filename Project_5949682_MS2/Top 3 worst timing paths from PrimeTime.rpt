@@ -1,0 +1,169 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-slack_lesser_than 0.00
+	-max_paths 3
+	-sort_by slack
+Design : conv_pool
+Version: P-2019.03-SP5
+Date   : Fri May  9 13:47:36 2025
+****************************************
+
+
+  Startpoint: lat_tile_regx38x
+               (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: c1_10_regx4x
+               (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: reg2reg
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.05(cell)  1.00(net)
+  Min Clock Paths Derating Factor : 0.90(cell)  1.10(net)
+  Max Clock Paths Derating Factor : 1.05(cell)  1.00(net)
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  lat_tile_regx38x/CP (DFQD2BWP16P90)                     0.00       0.00 r
+  lat_tile_regx38x/Q (DFQD2BWP16P90)                      0.09       0.09 f
+  U9073/ZN (XNR2D1BWP20P90)                               0.03       0.12 r
+  U7425/ZN (OAI22D1BWP20P90)                              0.02       0.14 f
+  U16084/ZN (INVD1BWP20P90)                               0.01       0.15 r
+  U16070/ZN (IOAI21D1BWP20P90)                            0.02       0.17 r
+  U16031/ZN (ND2D1BWP20P90LVT)                            0.01       0.18 f
+  U9178/CO (FA1D1BWP16P90)                                0.03       0.22 f
+  U10225/S (FA1D1BWP20P90)                                0.06       0.27 r
+  U1611/CO (FA1D1BWP16P90)                                0.03       0.30 r
+  U7930/S (FA1D1BWP16P90)                                 0.04       0.35 f
+  U1486/CO (FA1D1BWP16P90)                                0.03       0.38 f
+  U9448/Z (XOR3D4BWP16P90)                                0.03       0.41 r
+  U9512/S (FA1D1BWP16P90)                                 0.04       0.45 f
+  U2793/ZN (NR2D2BWP16P90)                                0.01       0.46 r
+  U6545/ZN (OAI21D2BWP16P90)                              0.01       0.48 f
+  U2574/ZN (IOAI21D1BWP16P90)                             0.02       0.49 f
+  U2145/ZN (AOI21D1BWP20P90LVT)                           0.01       0.51 r
+  U2044/Z (XOR2D1BWP16P90LVT)                             0.02       0.52 f
+  U17594/Z (OR2D2BWP16P90)                                0.02       0.54 f
+  U16004/ZN (OAI31D4BWP16P90LVT)                          0.02       0.56 r
+  U11782/ZN (IND3D1BWP16P90)                              0.01       0.57 f
+  c1_10_regx4x/D (DFQD1BWP16P90)                          0.00       0.57 f
+  data arrival time                                                  0.57
+
+  clock CLK (rise edge)                                   0.55       0.55
+  clock network delay (ideal)                             0.00       0.55
+  clock reconvergence pessimism                           0.00       0.55
+  c1_10_regx4x/CP (DFQD1BWP16P90)                                    0.55 r
+  library setup time                                     -0.00       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.55
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: lat_tile_regx38x
+               (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: c1_10_regx2x
+               (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: reg2reg
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.05(cell)  1.00(net)
+  Min Clock Paths Derating Factor : 0.90(cell)  1.10(net)
+  Max Clock Paths Derating Factor : 1.05(cell)  1.00(net)
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  lat_tile_regx38x/CP (DFQD2BWP16P90)                     0.00       0.00 r
+  lat_tile_regx38x/Q (DFQD2BWP16P90)                      0.09       0.09 f
+  U9073/ZN (XNR2D1BWP20P90)                               0.03       0.12 r
+  U7425/ZN (OAI22D1BWP20P90)                              0.02       0.14 f
+  U16084/ZN (INVD1BWP20P90)                               0.01       0.15 r
+  U16070/ZN (IOAI21D1BWP20P90)                            0.02       0.17 r
+  U16031/ZN (ND2D1BWP20P90LVT)                            0.01       0.18 f
+  U9178/CO (FA1D1BWP16P90)                                0.03       0.22 f
+  U10225/S (FA1D1BWP20P90)                                0.06       0.27 r
+  U1611/CO (FA1D1BWP16P90)                                0.03       0.30 r
+  U7930/S (FA1D1BWP16P90)                                 0.04       0.35 f
+  U1486/CO (FA1D1BWP16P90)                                0.03       0.38 f
+  U9448/Z (XOR3D4BWP16P90)                                0.03       0.41 r
+  U9512/S (FA1D1BWP16P90)                                 0.04       0.45 f
+  U2793/ZN (NR2D2BWP16P90)                                0.01       0.46 r
+  U6545/ZN (OAI21D2BWP16P90)                              0.01       0.48 f
+  U2574/ZN (IOAI21D1BWP16P90)                             0.02       0.49 f
+  U2145/ZN (AOI21D1BWP20P90LVT)                           0.01       0.51 r
+  U2044/Z (XOR2D1BWP16P90LVT)                             0.02       0.52 f
+  U17594/Z (OR2D2BWP16P90)                                0.02       0.54 f
+  U16004/ZN (OAI31D4BWP16P90LVT)                          0.02       0.56 r
+  U11776/ZN (IND3D1BWP16P90)                              0.01       0.57 f
+  c1_10_regx2x/D (DFQD1BWP16P90)                          0.00       0.57 f
+  data arrival time                                                  0.57
+
+  clock CLK (rise edge)                                   0.55       0.55
+  clock network delay (ideal)                             0.00       0.55
+  clock reconvergence pessimism                           0.00       0.55
+  c1_10_regx2x/CP (DFQD1BWP16P90)                                    0.55 r
+  library setup time                                     -0.00       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.55
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: lat_tile_regx38x
+               (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: c1_10_regx1x
+               (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: reg2reg
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.05(cell)  1.00(net)
+  Min Clock Paths Derating Factor : 0.90(cell)  1.10(net)
+  Max Clock Paths Derating Factor : 1.05(cell)  1.00(net)
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  lat_tile_regx38x/CP (DFQD2BWP16P90)                     0.00       0.00 r
+  lat_tile_regx38x/Q (DFQD2BWP16P90)                      0.09       0.09 f
+  U9073/ZN (XNR2D1BWP20P90)                               0.03       0.12 r
+  U7425/ZN (OAI22D1BWP20P90)                              0.02       0.14 f
+  U16084/ZN (INVD1BWP20P90)                               0.01       0.15 r
+  U16070/ZN (IOAI21D1BWP20P90)                            0.02       0.17 r
+  U16031/ZN (ND2D1BWP20P90LVT)                            0.01       0.18 f
+  U9178/CO (FA1D1BWP16P90)                                0.03       0.22 f
+  U10225/S (FA1D1BWP20P90)                                0.06       0.27 r
+  U1611/CO (FA1D1BWP16P90)                                0.03       0.30 r
+  U7930/S (FA1D1BWP16P90)                                 0.04       0.35 f
+  U1486/CO (FA1D1BWP16P90)                                0.03       0.38 f
+  U9448/Z (XOR3D4BWP16P90)                                0.03       0.41 r
+  U9512/S (FA1D1BWP16P90)                                 0.04       0.45 f
+  U2793/ZN (NR2D2BWP16P90)                                0.01       0.46 r
+  U6545/ZN (OAI21D2BWP16P90)                              0.01       0.48 f
+  U2574/ZN (IOAI21D1BWP16P90)                             0.02       0.49 f
+  U2145/ZN (AOI21D1BWP20P90LVT)                           0.01       0.51 r
+  U2044/Z (XOR2D1BWP16P90LVT)                             0.02       0.52 f
+  U17594/Z (OR2D2BWP16P90)                                0.02       0.54 f
+  U16004/ZN (OAI31D4BWP16P90LVT)                          0.02       0.56 r
+  U11768/ZN (IND3D1BWP16P90)                              0.01       0.57 f
+  c1_10_regx1x/D (DFQD1BWP16P90)                          0.00       0.57 f
+  data arrival time                                                  0.57
+
+  clock CLK (rise edge)                                   0.55       0.55
+  clock network delay (ideal)                             0.00       0.55
+  clock reconvergence pessimism                           0.00       0.55
+  c1_10_regx1x/CP (DFQD1BWP16P90)                                    0.55 r
+  library setup time                                     -0.00       0.55
+  data required time                                                 0.55
+  ------------------------------------------------------------------------------
+  data required time                                                 0.55
+  data arrival time                                                 -0.55
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+1

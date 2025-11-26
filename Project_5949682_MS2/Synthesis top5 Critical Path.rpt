@@ -1,0 +1,742 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : full_chip_conv_pool
+Version: U-2022.12-SP5
+Date   : Fri May  9 00:34:34 2025
+****************************************
+
+Operating Conditions: tt0p8v25c   Library: N16ADFP_StdCelltt0p8v25c_ccs
+Wire Load Model Mode: segmented
+
+  Startpoint: conv_kernel_0[43]
+              (input port clocked by CLK)
+  Endpoint: conv_pool_inst/c0_01_regx4x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  full_chip_conv_pool
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                              Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  input external delay                               0.02       0.02 f
+  conv_kernel_0[43] (in)                             0.01       0.03 f
+  conv_pool_inst/conv_kernel_0[43] (conv_pool)       0.00       0.03 f
+  conv_pool_inst/U1970/ZN (CKND2BWP16P90)            0.02       0.04 r
+  conv_pool_inst/U3390/ZN (INVD4BWP16P90LVT)         0.02       0.06 f
+  conv_pool_inst/U6879/Z (XOR2D1BWP20P90LVT)         0.03       0.09 r
+  conv_pool_inst/U3273/ZN (CKND2D8BWP16P90)          0.02       0.11 f
+  conv_pool_inst/U18352/ZN (INVD1BWP20P90)           0.02       0.13 r
+  conv_pool_inst/U18349/ZN (OAI21D4BWP20P90LVT)      0.01       0.14 f
+  conv_pool_inst/U9017/S (FA1D1BWP20P90)             0.05       0.20 r
+  conv_pool_inst/U15406/S (FA1D1BWP16P90)            0.05       0.24 f
+  conv_pool_inst/U8381/ZN (XNR3D4BWP16P90)           0.05       0.29 r
+  conv_pool_inst/U8380/ZN (XNR3D2BWP20P90)           0.06       0.34 f
+  conv_pool_inst/U7806/S (FA1D1BWP16P90)             0.04       0.39 r
+  conv_pool_inst/U8340/Z (XOR3D2BWP20P90LVT)         0.05       0.43 r
+  conv_pool_inst/U4310/ZN (CKNR2D1BWP16P90)          0.01       0.45 f
+  conv_pool_inst/U4280/ZN (NR2D2BWP16P90)            0.01       0.46 r
+  conv_pool_inst/U12105/Z (AN2D1BWP20P90)            0.02       0.48 r
+  conv_pool_inst/U2685/ZN (AOI21D1BWP16P90LVT)       0.01       0.49 f
+  conv_pool_inst/U15590/Z (XOR2D1BWP16P90)           0.02       0.50 r
+  conv_pool_inst/U2509/ZN (AOI211D1BWP16P90LVT)      0.01       0.51 f
+  conv_pool_inst/U18080/ZN (ND2D2BWP16P90LVT)        0.01       0.52 r
+  conv_pool_inst/U16326/ZN (OAI21D4BWP16P90LVT)      0.01       0.53 f
+  conv_pool_inst/U2037/ZN (ND2D1BWP16P90LVT)         0.01       0.54 r
+  conv_pool_inst/c0_01_regx4x/D (DFQD2BWP16P90)      0.00       0.54 r
+  data arrival time                                             0.54
+
+  clock CLK (rise edge)                              0.55       0.55
+  clock network delay (ideal)                        0.00       0.55
+  conv_pool_inst/c0_01_regx4x/CP (DFQD2BWP16P90)     0.00       0.55 r
+  library setup time                                -0.01       0.54
+  data required time                                            0.54
+  ---------------------------------------------------------------------
+  data required time                                            0.54
+  data arrival time                                            -0.54
+  ---------------------------------------------------------------------
+  slack (MET)                                                   0.00
+
+
+  Startpoint: conv_kernel_0[43]
+              (input port clocked by CLK)
+  Endpoint: conv_pool_inst/c0_01_regx3x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  full_chip_conv_pool
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                              Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  input external delay                               0.02       0.02 f
+  conv_kernel_0[43] (in)                             0.01       0.03 f
+  conv_pool_inst/conv_kernel_0[43] (conv_pool)       0.00       0.03 f
+  conv_pool_inst/U1970/ZN (CKND2BWP16P90)            0.02       0.04 r
+  conv_pool_inst/U3390/ZN (INVD4BWP16P90LVT)         0.02       0.06 f
+  conv_pool_inst/U6879/Z (XOR2D1BWP20P90LVT)         0.03       0.09 r
+  conv_pool_inst/U3273/ZN (CKND2D8BWP16P90)          0.02       0.11 f
+  conv_pool_inst/U18352/ZN (INVD1BWP20P90)           0.02       0.13 r
+  conv_pool_inst/U18349/ZN (OAI21D4BWP20P90LVT)      0.01       0.14 f
+  conv_pool_inst/U9017/S (FA1D1BWP20P90)             0.05       0.20 r
+  conv_pool_inst/U15406/S (FA1D1BWP16P90)            0.05       0.24 f
+  conv_pool_inst/U8381/ZN (XNR3D4BWP16P90)           0.05       0.29 r
+  conv_pool_inst/U8380/ZN (XNR3D2BWP20P90)           0.06       0.34 f
+  conv_pool_inst/U7806/S (FA1D1BWP16P90)             0.04       0.39 r
+  conv_pool_inst/U8340/Z (XOR3D2BWP20P90LVT)         0.05       0.43 r
+  conv_pool_inst/U4310/ZN (CKNR2D1BWP16P90)          0.01       0.45 f
+  conv_pool_inst/U4280/ZN (NR2D2BWP16P90)            0.01       0.46 r
+  conv_pool_inst/U12105/Z (AN2D1BWP20P90)            0.02       0.48 r
+  conv_pool_inst/U2685/ZN (AOI21D1BWP16P90LVT)       0.01       0.49 f
+  conv_pool_inst/U15590/Z (XOR2D1BWP16P90)           0.02       0.50 r
+  conv_pool_inst/U2509/ZN (AOI211D1BWP16P90LVT)      0.01       0.51 f
+  conv_pool_inst/U18080/ZN (ND2D2BWP16P90LVT)        0.01       0.52 r
+  conv_pool_inst/U16326/ZN (OAI21D4BWP16P90LVT)      0.01       0.53 f
+  conv_pool_inst/U2069/ZN (ND2D1BWP16P90LVT)         0.01       0.54 r
+  conv_pool_inst/c0_01_regx3x/D (DFQD2BWP16P90)      0.00       0.54 r
+  data arrival time                                             0.54
+
+  clock CLK (rise edge)                              0.55       0.55
+  clock network delay (ideal)                        0.00       0.55
+  conv_pool_inst/c0_01_regx3x/CP (DFQD2BWP16P90)     0.00       0.55 r
+  library setup time                                -0.01       0.54
+  data required time                                            0.54
+  ---------------------------------------------------------------------
+  data required time                                            0.54
+  data arrival time                                            -0.54
+  ---------------------------------------------------------------------
+  slack (MET)                                                   0.00
+
+
+  Startpoint: conv_kernel_0[43]
+              (input port clocked by CLK)
+  Endpoint: conv_pool_inst/c0_01_regx2x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  full_chip_conv_pool
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                              Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  input external delay                               0.02       0.02 f
+  conv_kernel_0[43] (in)                             0.01       0.03 f
+  conv_pool_inst/conv_kernel_0[43] (conv_pool)       0.00       0.03 f
+  conv_pool_inst/U1970/ZN (CKND2BWP16P90)            0.02       0.04 r
+  conv_pool_inst/U3390/ZN (INVD4BWP16P90LVT)         0.02       0.06 f
+  conv_pool_inst/U6879/Z (XOR2D1BWP20P90LVT)         0.03       0.09 r
+  conv_pool_inst/U3273/ZN (CKND2D8BWP16P90)          0.02       0.11 f
+  conv_pool_inst/U18352/ZN (INVD1BWP20P90)           0.02       0.13 r
+  conv_pool_inst/U18349/ZN (OAI21D4BWP20P90LVT)      0.01       0.14 f
+  conv_pool_inst/U9017/S (FA1D1BWP20P90)             0.05       0.20 r
+  conv_pool_inst/U15406/S (FA1D1BWP16P90)            0.05       0.24 f
+  conv_pool_inst/U8381/ZN (XNR3D4BWP16P90)           0.05       0.29 r
+  conv_pool_inst/U8380/ZN (XNR3D2BWP20P90)           0.06       0.34 f
+  conv_pool_inst/U7806/S (FA1D1BWP16P90)             0.04       0.39 r
+  conv_pool_inst/U8340/Z (XOR3D2BWP20P90LVT)         0.05       0.43 r
+  conv_pool_inst/U4310/ZN (CKNR2D1BWP16P90)          0.01       0.45 f
+  conv_pool_inst/U4280/ZN (NR2D2BWP16P90)            0.01       0.46 r
+  conv_pool_inst/U12105/Z (AN2D1BWP20P90)            0.02       0.48 r
+  conv_pool_inst/U2685/ZN (AOI21D1BWP16P90LVT)       0.01       0.49 f
+  conv_pool_inst/U15590/Z (XOR2D1BWP16P90)           0.02       0.50 r
+  conv_pool_inst/U2509/ZN (AOI211D1BWP16P90LVT)      0.01       0.51 f
+  conv_pool_inst/U18080/ZN (ND2D2BWP16P90LVT)        0.01       0.52 r
+  conv_pool_inst/U16326/ZN (OAI21D4BWP16P90LVT)      0.01       0.53 f
+  conv_pool_inst/U2063/ZN (ND2D1BWP16P90LVT)         0.01       0.54 r
+  conv_pool_inst/c0_01_regx2x/D (DFQD2BWP16P90)      0.00       0.54 r
+  data arrival time                                             0.54
+
+  clock CLK (rise edge)                              0.55       0.55
+  clock network delay (ideal)                        0.00       0.55
+  conv_pool_inst/c0_01_regx2x/CP (DFQD2BWP16P90)     0.00       0.55 r
+  library setup time                                -0.01       0.54
+  data required time                                            0.54
+  ---------------------------------------------------------------------
+  data required time                                            0.54
+  data arrival time                                            -0.54
+  ---------------------------------------------------------------------
+  slack (MET)                                                   0.00
+
+
+  Startpoint: conv_kernel_0[43]
+              (input port clocked by CLK)
+  Endpoint: conv_pool_inst/c0_01_regx1x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  full_chip_conv_pool
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                              Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  input external delay                               0.02       0.02 f
+  conv_kernel_0[43] (in)                             0.01       0.03 f
+  conv_pool_inst/conv_kernel_0[43] (conv_pool)       0.00       0.03 f
+  conv_pool_inst/U1970/ZN (CKND2BWP16P90)            0.02       0.04 r
+  conv_pool_inst/U3390/ZN (INVD4BWP16P90LVT)         0.02       0.06 f
+  conv_pool_inst/U6879/Z (XOR2D1BWP20P90LVT)         0.03       0.09 r
+  conv_pool_inst/U3273/ZN (CKND2D8BWP16P90)          0.02       0.11 f
+  conv_pool_inst/U18352/ZN (INVD1BWP20P90)           0.02       0.13 r
+  conv_pool_inst/U18349/ZN (OAI21D4BWP20P90LVT)      0.01       0.14 f
+  conv_pool_inst/U9017/S (FA1D1BWP20P90)             0.05       0.20 r
+  conv_pool_inst/U15406/S (FA1D1BWP16P90)            0.05       0.24 f
+  conv_pool_inst/U8381/ZN (XNR3D4BWP16P90)           0.05       0.29 r
+  conv_pool_inst/U8380/ZN (XNR3D2BWP20P90)           0.06       0.34 f
+  conv_pool_inst/U7806/S (FA1D1BWP16P90)             0.04       0.39 r
+  conv_pool_inst/U8340/Z (XOR3D2BWP20P90LVT)         0.05       0.43 r
+  conv_pool_inst/U4310/ZN (CKNR2D1BWP16P90)          0.01       0.45 f
+  conv_pool_inst/U4280/ZN (NR2D2BWP16P90)            0.01       0.46 r
+  conv_pool_inst/U12105/Z (AN2D1BWP20P90)            0.02       0.48 r
+  conv_pool_inst/U2685/ZN (AOI21D1BWP16P90LVT)       0.01       0.49 f
+  conv_pool_inst/U15590/Z (XOR2D1BWP16P90)           0.02       0.50 r
+  conv_pool_inst/U2509/ZN (AOI211D1BWP16P90LVT)      0.01       0.51 f
+  conv_pool_inst/U18080/ZN (ND2D2BWP16P90LVT)        0.01       0.52 r
+  conv_pool_inst/U16326/ZN (OAI21D4BWP16P90LVT)      0.01       0.53 f
+  conv_pool_inst/U2048/ZN (ND2D1BWP16P90LVT)         0.01       0.54 r
+  conv_pool_inst/c0_01_regx1x/D (DFQD2BWP16P90)      0.00       0.54 r
+  data arrival time                                             0.54
+
+  clock CLK (rise edge)                              0.55       0.55
+  clock network delay (ideal)                        0.00       0.55
+  conv_pool_inst/c0_01_regx1x/CP (DFQD2BWP16P90)     0.00       0.55 r
+  library setup time                                -0.01       0.54
+  data required time                                            0.54
+  ---------------------------------------------------------------------
+  data required time                                            0.54
+  data arrival time                                            -0.54
+  ---------------------------------------------------------------------
+  slack (MET)                                                   0.00
+
+
+  Startpoint: conv_kernel_0[43]
+              (input port clocked by CLK)
+  Endpoint: conv_pool_inst/c0_01_regx0x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  full_chip_conv_pool
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                              Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  input external delay                               0.02       0.02 f
+  conv_kernel_0[43] (in)                             0.01       0.03 f
+  conv_pool_inst/conv_kernel_0[43] (conv_pool)       0.00       0.03 f
+  conv_pool_inst/U1970/ZN (CKND2BWP16P90)            0.02       0.04 r
+  conv_pool_inst/U3390/ZN (INVD4BWP16P90LVT)         0.02       0.06 f
+  conv_pool_inst/U6879/Z (XOR2D1BWP20P90LVT)         0.03       0.09 r
+  conv_pool_inst/U3273/ZN (CKND2D8BWP16P90)          0.02       0.11 f
+  conv_pool_inst/U18352/ZN (INVD1BWP20P90)           0.02       0.13 r
+  conv_pool_inst/U18349/ZN (OAI21D4BWP20P90LVT)      0.01       0.14 f
+  conv_pool_inst/U9017/S (FA1D1BWP20P90)             0.05       0.20 r
+  conv_pool_inst/U15406/S (FA1D1BWP16P90)            0.05       0.24 f
+  conv_pool_inst/U8381/ZN (XNR3D4BWP16P90)           0.05       0.29 r
+  conv_pool_inst/U8380/ZN (XNR3D2BWP20P90)           0.06       0.34 f
+  conv_pool_inst/U7806/S (FA1D1BWP16P90)             0.04       0.39 r
+  conv_pool_inst/U8340/Z (XOR3D2BWP20P90LVT)         0.05       0.43 r
+  conv_pool_inst/U4310/ZN (CKNR2D1BWP16P90)          0.01       0.45 f
+  conv_pool_inst/U4280/ZN (NR2D2BWP16P90)            0.01       0.46 r
+  conv_pool_inst/U12105/Z (AN2D1BWP20P90)            0.02       0.48 r
+  conv_pool_inst/U2685/ZN (AOI21D1BWP16P90LVT)       0.01       0.49 f
+  conv_pool_inst/U15590/Z (XOR2D1BWP16P90)           0.02       0.50 r
+  conv_pool_inst/U2509/ZN (AOI211D1BWP16P90LVT)      0.01       0.51 f
+  conv_pool_inst/U18080/ZN (ND2D2BWP16P90LVT)        0.01       0.52 r
+  conv_pool_inst/U16326/ZN (OAI21D4BWP16P90LVT)      0.01       0.53 f
+  conv_pool_inst/U2045/ZN (ND2D1BWP16P90LVT)         0.01       0.54 r
+  conv_pool_inst/c0_01_regx0x/D (DFQD2BWP16P90)      0.00       0.54 r
+  data arrival time                                             0.54
+
+  clock CLK (rise edge)                              0.55       0.55
+  clock network delay (ideal)                        0.00       0.55
+  conv_pool_inst/c0_01_regx0x/CP (DFQD2BWP16P90)     0.00       0.55 r
+  library setup time                                -0.01       0.54
+  data required time                                            0.54
+  ---------------------------------------------------------------------
+  data required time                                            0.54
+  data arrival time                                            -0.54
+  ---------------------------------------------------------------------
+  slack (MET)                                                   0.00
+
+
+  Startpoint: conv_pool_inst/pool_address_regx15x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: output_addr_0[15]
+            (output port clocked by CLK)
+  Path Group: output
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  full_chip_conv_pool
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                                       Incr       Path
+  ------------------------------------------------------------------------------
+  clock CLK (rise edge)                                       0.00       0.00
+  clock network delay (ideal)                                 0.00       0.00
+  conv_pool_inst/pool_address_regx15x/CP (DFQD1BWP20P90)      0.00       0.00 r
+  conv_pool_inst/pool_address_regx15x/Q (DFQD1BWP20P90)       0.06       0.06 f
+  conv_pool_inst/U4181/Z (CKBD1BWP20P90)                      0.02       0.08 f
+  conv_pool_inst/output_addr_0[15] (conv_pool)                0.00       0.08 f
+  output_addr_0[15] (out)                                     0.00       0.08 f
+  data arrival time                                                      0.08
+
+  clock CLK (rise edge)                                       0.55       0.55
+  clock network delay (ideal)                                 0.00       0.55
+  output external delay                                      -0.06       0.49
+  data required time                                                     0.49
+  ------------------------------------------------------------------------------
+  data required time                                                     0.49
+  data arrival time                                                     -0.08
+  ------------------------------------------------------------------------------
+  slack (MET)                                                            0.41
+
+
+  Startpoint: conv_pool_inst/pool_address_regx13x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: output_addr_0[13]
+            (output port clocked by CLK)
+  Path Group: output
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  full_chip_conv_pool
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                                       Incr       Path
+  ------------------------------------------------------------------------------
+  clock CLK (rise edge)                                       0.00       0.00
+  clock network delay (ideal)                                 0.00       0.00
+  conv_pool_inst/pool_address_regx13x/CP (DFQD1BWP20P90)      0.00       0.00 r
+  conv_pool_inst/pool_address_regx13x/Q (DFQD1BWP20P90)       0.06       0.06 f
+  conv_pool_inst/U4179/Z (CKBD1BWP20P90)                      0.02       0.08 f
+  conv_pool_inst/output_addr_0[13] (conv_pool)                0.00       0.08 f
+  output_addr_0[13] (out)                                     0.00       0.08 f
+  data arrival time                                                      0.08
+
+  clock CLK (rise edge)                                       0.55       0.55
+  clock network delay (ideal)                                 0.00       0.55
+  output external delay                                      -0.06       0.49
+  data required time                                                     0.49
+  ------------------------------------------------------------------------------
+  data required time                                                     0.49
+  data arrival time                                                     -0.08
+  ------------------------------------------------------------------------------
+  slack (MET)                                                            0.41
+
+
+  Startpoint: conv_pool_inst/pool_address_regx0x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: output_addr_0[0]
+            (output port clocked by CLK)
+  Path Group: output
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  full_chip_conv_pool
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                                      Incr       Path
+  -----------------------------------------------------------------------------
+  clock CLK (rise edge)                                      0.00       0.00
+  clock network delay (ideal)                                0.00       0.00
+  conv_pool_inst/pool_address_regx0x/CP (DFQD1BWP20P90)      0.00       0.00 r
+  conv_pool_inst/pool_address_regx0x/Q (DFQD1BWP20P90)       0.06       0.06 f
+  conv_pool_inst/U4166/Z (CKBD1BWP20P90)                     0.02       0.08 f
+  conv_pool_inst/output_addr_0[0] (conv_pool)                0.00       0.08 f
+  output_addr_0[0] (out)                                     0.00       0.08 f
+  data arrival time                                                     0.08
+
+  clock CLK (rise edge)                                      0.55       0.55
+  clock network delay (ideal)                                0.00       0.55
+  output external delay                                     -0.06       0.49
+  data required time                                                    0.49
+  -----------------------------------------------------------------------------
+  data required time                                                    0.49
+  data arrival time                                                    -0.08
+  -----------------------------------------------------------------------------
+  slack (MET)                                                           0.41
+
+
+  Startpoint: conv_pool_inst/pool_address_regx13x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: output_addr_2[13]
+            (output port clocked by CLK)
+  Path Group: output
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  full_chip_conv_pool
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                                       Incr       Path
+  ------------------------------------------------------------------------------
+  clock CLK (rise edge)                                       0.00       0.00
+  clock network delay (ideal)                                 0.00       0.00
+  conv_pool_inst/pool_address_regx13x/CP (DFQD1BWP20P90)      0.00       0.00 r
+  conv_pool_inst/pool_address_regx13x/Q (DFQD1BWP20P90)       0.06       0.06 f
+  conv_pool_inst/U4161/Z (CKBD1BWP20P90)                      0.02       0.08 f
+  conv_pool_inst/output_addr_2[13] (conv_pool)                0.00       0.08 f
+  output_addr_2[13] (out)                                     0.00       0.08 f
+  data arrival time                                                      0.08
+
+  clock CLK (rise edge)                                       0.55       0.55
+  clock network delay (ideal)                                 0.00       0.55
+  output external delay                                      -0.06       0.49
+  data required time                                                     0.49
+  ------------------------------------------------------------------------------
+  data required time                                                     0.49
+  data arrival time                                                     -0.08
+  ------------------------------------------------------------------------------
+  slack (MET)                                                            0.41
+
+
+  Startpoint: conv_pool_inst/pool_address_regx0x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: output_addr_2[0]
+            (output port clocked by CLK)
+  Path Group: output
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  full_chip_conv_pool
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                                      Incr       Path
+  -----------------------------------------------------------------------------
+  clock CLK (rise edge)                                      0.00       0.00
+  clock network delay (ideal)                                0.00       0.00
+  conv_pool_inst/pool_address_regx0x/CP (DFQD1BWP20P90)      0.00       0.00 r
+  conv_pool_inst/pool_address_regx0x/Q (DFQD1BWP20P90)       0.06       0.06 f
+  conv_pool_inst/U4165/Z (CKBD1BWP20P90)                     0.02       0.08 f
+  conv_pool_inst/output_addr_2[0] (conv_pool)                0.00       0.08 f
+  output_addr_2[0] (out)                                     0.00       0.08 f
+  data arrival time                                                     0.08
+
+  clock CLK (rise edge)                                      0.55       0.55
+  clock network delay (ideal)                                0.00       0.55
+  output external delay                                     -0.06       0.49
+  data required time                                                    0.49
+  -----------------------------------------------------------------------------
+  data required time                                                    0.49
+  data arrival time                                                    -0.08
+  -----------------------------------------------------------------------------
+  slack (MET)                                                           0.41
+
+
+  Startpoint: conv_pool_inst/lat_tile_regx32x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: conv_pool_inst/c0_10_regx4x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  full_chip_conv_pool
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  conv_pool_inst/lat_tile_regx32x/CP (DFQD2BWP16P90)      0.00       0.00 r
+  conv_pool_inst/lat_tile_regx32x/Q (DFQD2BWP16P90)       0.06       0.06 r
+  conv_pool_inst/U4141/Z (BUFFD2BWP16P90)                 0.04       0.10 r
+  conv_pool_inst/U10777/ZN (IND2D1BWP20P90)               0.02       0.12 r
+  conv_pool_inst/U10778/ZN (ND2D1BWP20P90)                0.02       0.13 f
+  conv_pool_inst/U11134/CO (FA1D1BWP16P90)                0.03       0.17 f
+  conv_pool_inst/U11135/S (FA1D1BWP16P90)                 0.05       0.21 r
+  conv_pool_inst/U11146/S (FA1D1BWP16P90)                 0.04       0.25 f
+  conv_pool_inst/U11151/CO (FA1D1BWP16P90)                0.03       0.28 f
+  conv_pool_inst/U1582/CO (FA1D1BWP16P90)                 0.03       0.31 f
+  conv_pool_inst/U11470/S (FA1D1BWP20P90)                 0.05       0.36 r
+  conv_pool_inst/U11166/ZN (ND2D1BWP16P90)                0.01       0.37 f
+  conv_pool_inst/U11167/ZN (INVD1BWP20P90)                0.01       0.38 r
+  conv_pool_inst/U6031/Z (AO21D1BWP16P90)                 0.02       0.40 r
+  conv_pool_inst/U6013/ZN (AOI21D2BWP16P90)               0.01       0.41 f
+  conv_pool_inst/U5984/ZN (OAI21D2BWP16P90)               0.01       0.42 r
+  conv_pool_inst/U18164/ZN (AOI21D2BWP16P90LVT)           0.01       0.44 f
+  conv_pool_inst/U18041/ZN (OAI21D4BWP16P90LVT)           0.01       0.45 r
+  conv_pool_inst/U17864/ZN (ND2D2BWP16P90LVT)             0.01       0.45 f
+  conv_pool_inst/U16582/ZN (INR2D4BWP16P90LVT)            0.01       0.46 f
+  conv_pool_inst/U18301/Z (OA21D1BWP16P90LVT)             0.01       0.47 f
+  conv_pool_inst/U2638/Z (XOR2D2BWP20P90LVT)              0.02       0.50 r
+  conv_pool_inst/U1345/ZN (CKND2D1BWP16P90)               0.01       0.51 f
+  conv_pool_inst/U18039/ZN (ND3D4BWP16P90LVT)             0.01       0.52 r
+  conv_pool_inst/U15853/ZN (OAI21D4BWP16P90LVT)           0.01       0.53 f
+  conv_pool_inst/U2633/ZN (IND3D1BWP20P90LVT)             0.01       0.54 r
+  conv_pool_inst/c0_10_regx4x/D (DFQD1BWP16P90)           0.00       0.54 r
+  data arrival time                                                  0.54
+
+  clock CLK (rise edge)                                   0.55       0.55
+  clock network delay (ideal)                             0.00       0.55
+  conv_pool_inst/c0_10_regx4x/CP (DFQD1BWP16P90)          0.00       0.55 r
+  library setup time                                     -0.01       0.54
+  data required time                                                 0.54
+  --------------------------------------------------------------------------
+  data required time                                                 0.54
+  data arrival time                                                 -0.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: conv_pool_inst/lat_tile_regx32x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: conv_pool_inst/c0_10_regx2x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  full_chip_conv_pool
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  conv_pool_inst/lat_tile_regx32x/CP (DFQD2BWP16P90)      0.00       0.00 r
+  conv_pool_inst/lat_tile_regx32x/Q (DFQD2BWP16P90)       0.06       0.06 r
+  conv_pool_inst/U4141/Z (BUFFD2BWP16P90)                 0.04       0.10 r
+  conv_pool_inst/U10777/ZN (IND2D1BWP20P90)               0.02       0.12 r
+  conv_pool_inst/U10778/ZN (ND2D1BWP20P90)                0.02       0.13 f
+  conv_pool_inst/U11134/CO (FA1D1BWP16P90)                0.03       0.17 f
+  conv_pool_inst/U11135/S (FA1D1BWP16P90)                 0.05       0.21 r
+  conv_pool_inst/U11146/S (FA1D1BWP16P90)                 0.04       0.25 f
+  conv_pool_inst/U11151/CO (FA1D1BWP16P90)                0.03       0.28 f
+  conv_pool_inst/U1582/CO (FA1D1BWP16P90)                 0.03       0.31 f
+  conv_pool_inst/U11470/S (FA1D1BWP20P90)                 0.05       0.36 r
+  conv_pool_inst/U11166/ZN (ND2D1BWP16P90)                0.01       0.37 f
+  conv_pool_inst/U11167/ZN (INVD1BWP20P90)                0.01       0.38 r
+  conv_pool_inst/U6031/Z (AO21D1BWP16P90)                 0.02       0.40 r
+  conv_pool_inst/U6013/ZN (AOI21D2BWP16P90)               0.01       0.41 f
+  conv_pool_inst/U5984/ZN (OAI21D2BWP16P90)               0.01       0.42 r
+  conv_pool_inst/U18164/ZN (AOI21D2BWP16P90LVT)           0.01       0.44 f
+  conv_pool_inst/U18041/ZN (OAI21D4BWP16P90LVT)           0.01       0.45 r
+  conv_pool_inst/U17864/ZN (ND2D2BWP16P90LVT)             0.01       0.45 f
+  conv_pool_inst/U16582/ZN (INR2D4BWP16P90LVT)            0.01       0.46 f
+  conv_pool_inst/U18301/Z (OA21D1BWP16P90LVT)             0.01       0.47 f
+  conv_pool_inst/U2638/Z (XOR2D2BWP20P90LVT)              0.02       0.50 r
+  conv_pool_inst/U1345/ZN (CKND2D1BWP16P90)               0.01       0.51 f
+  conv_pool_inst/U18039/ZN (ND3D4BWP16P90LVT)             0.01       0.52 r
+  conv_pool_inst/U15853/ZN (OAI21D4BWP16P90LVT)           0.01       0.53 f
+  conv_pool_inst/U2635/ZN (IND3D1BWP20P90LVT)             0.01       0.54 r
+  conv_pool_inst/c0_10_regx2x/D (DFQD1BWP16P90)           0.00       0.54 r
+  data arrival time                                                  0.54
+
+  clock CLK (rise edge)                                   0.55       0.55
+  clock network delay (ideal)                             0.00       0.55
+  conv_pool_inst/c0_10_regx2x/CP (DFQD1BWP16P90)          0.00       0.55 r
+  library setup time                                     -0.01       0.54
+  data required time                                                 0.54
+  --------------------------------------------------------------------------
+  data required time                                                 0.54
+  data arrival time                                                 -0.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: conv_pool_inst/lat_tile_regx23x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: conv_pool_inst/c2_00_regx3x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  full_chip_conv_pool
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  conv_pool_inst/lat_tile_regx23x/CP (DFQD2BWP20P90)      0.00       0.00 r
+  conv_pool_inst/lat_tile_regx23x/Q (DFQD2BWP20P90)       0.09       0.09 f
+  conv_pool_inst/U17558/ZN (XNR2D1BWP20P90)               0.03       0.12 r
+  conv_pool_inst/U5683/ZN (OAI22D1BWP16P90)               0.02       0.14 f
+  conv_pool_inst/U17779/CO (FA1D1BWP16P90)                0.03       0.17 f
+  conv_pool_inst/U8504/S (FA1D1BWP20P90)                  0.05       0.23 r
+  conv_pool_inst/U9654/S (FA1D1BWP20P90)                  0.05       0.27 f
+  conv_pool_inst/U4527/S (FA1D1BWP16P90)                  0.05       0.32 r
+  conv_pool_inst/U1605/S (FA1D1BWP16P90)                  0.05       0.36 f
+  conv_pool_inst/U4233/Z (XOR3D2BWP20P90LVT)              0.04       0.40 f
+  conv_pool_inst/U5990/Z (XOR3D2BWP20P90LVT)              0.03       0.43 f
+  conv_pool_inst/U5034/ZN (CKND2D1BWP16P90)               0.02       0.45 r
+  conv_pool_inst/U18245/ZN (OAI21D4BWP16P90LVT)           0.01       0.46 f
+  conv_pool_inst/U18244/ZN (CKND2BWP20P90LVT)             0.01       0.46 r
+  conv_pool_inst/U13784/Z (OA21D1BWP20P90)                0.02       0.48 r
+  conv_pool_inst/U2631/Z (XOR2D2BWP16P90LVT)              0.02       0.50 r
+  conv_pool_inst/U2661/ZN (OAI21D2BWP16P90)               0.01       0.51 f
+  conv_pool_inst/U17927/ZN (IND4D4BWP16P90LVT)            0.01       0.52 r
+  conv_pool_inst/U18487/ZN (IND2D4BWP16P90LVT)            0.01       0.53 f
+  conv_pool_inst/U18454/ZN (ND2D2BWP16P90LVT)             0.00       0.54 r
+  conv_pool_inst/c2_00_regx3x/D (DFQD2BWP16P90)           0.00       0.54 r
+  data arrival time                                                  0.54
+
+  clock CLK (rise edge)                                   0.55       0.55
+  clock network delay (ideal)                             0.00       0.55
+  conv_pool_inst/c2_00_regx3x/CP (DFQD2BWP16P90)          0.00       0.55 r
+  library setup time                                     -0.01       0.54
+  data required time                                                 0.54
+  --------------------------------------------------------------------------
+  data required time                                                 0.54
+  data arrival time                                                 -0.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: conv_pool_inst/lat_tile_regx23x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: conv_pool_inst/c2_00_regx2x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  full_chip_conv_pool
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  conv_pool_inst/lat_tile_regx23x/CP (DFQD2BWP20P90)      0.00       0.00 r
+  conv_pool_inst/lat_tile_regx23x/Q (DFQD2BWP20P90)       0.09       0.09 f
+  conv_pool_inst/U17558/ZN (XNR2D1BWP20P90)               0.03       0.12 r
+  conv_pool_inst/U5683/ZN (OAI22D1BWP16P90)               0.02       0.14 f
+  conv_pool_inst/U17779/CO (FA1D1BWP16P90)                0.03       0.17 f
+  conv_pool_inst/U8504/S (FA1D1BWP20P90)                  0.05       0.23 r
+  conv_pool_inst/U9654/S (FA1D1BWP20P90)                  0.05       0.27 f
+  conv_pool_inst/U4527/S (FA1D1BWP16P90)                  0.05       0.32 r
+  conv_pool_inst/U1605/S (FA1D1BWP16P90)                  0.05       0.36 f
+  conv_pool_inst/U4233/Z (XOR3D2BWP20P90LVT)              0.04       0.40 f
+  conv_pool_inst/U5990/Z (XOR3D2BWP20P90LVT)              0.03       0.43 f
+  conv_pool_inst/U5034/ZN (CKND2D1BWP16P90)               0.02       0.45 r
+  conv_pool_inst/U18245/ZN (OAI21D4BWP16P90LVT)           0.01       0.46 f
+  conv_pool_inst/U18244/ZN (CKND2BWP20P90LVT)             0.01       0.46 r
+  conv_pool_inst/U13784/Z (OA21D1BWP20P90)                0.02       0.48 r
+  conv_pool_inst/U2631/Z (XOR2D2BWP16P90LVT)              0.02       0.50 r
+  conv_pool_inst/U2661/ZN (OAI21D2BWP16P90)               0.01       0.51 f
+  conv_pool_inst/U17927/ZN (IND4D4BWP16P90LVT)            0.01       0.52 r
+  conv_pool_inst/U18487/ZN (IND2D4BWP16P90LVT)            0.01       0.53 f
+  conv_pool_inst/U18452/ZN (ND2D2BWP16P90LVT)             0.00       0.54 r
+  conv_pool_inst/c2_00_regx2x/D (DFQD2BWP16P90)           0.00       0.54 r
+  data arrival time                                                  0.54
+
+  clock CLK (rise edge)                                   0.55       0.55
+  clock network delay (ideal)                             0.00       0.55
+  conv_pool_inst/c2_00_regx2x/CP (DFQD2BWP16P90)          0.00       0.55 r
+  library setup time                                     -0.01       0.54
+  data required time                                                 0.54
+  --------------------------------------------------------------------------
+  data required time                                                 0.54
+  data arrival time                                                 -0.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: conv_pool_inst/lat_tile_regx23x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: conv_pool_inst/c2_00_regx1x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  full_chip_conv_pool
+                     ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  conv_pool_inst/lat_tile_regx23x/CP (DFQD2BWP20P90)      0.00       0.00 r
+  conv_pool_inst/lat_tile_regx23x/Q (DFQD2BWP20P90)       0.09       0.09 f
+  conv_pool_inst/U17558/ZN (XNR2D1BWP20P90)               0.03       0.12 r
+  conv_pool_inst/U5683/ZN (OAI22D1BWP16P90)               0.02       0.14 f
+  conv_pool_inst/U17779/CO (FA1D1BWP16P90)                0.03       0.17 f
+  conv_pool_inst/U8504/S (FA1D1BWP20P90)                  0.05       0.23 r
+  conv_pool_inst/U9654/S (FA1D1BWP20P90)                  0.05       0.27 f
+  conv_pool_inst/U4527/S (FA1D1BWP16P90)                  0.05       0.32 r
+  conv_pool_inst/U1605/S (FA1D1BWP16P90)                  0.05       0.36 f
+  conv_pool_inst/U4233/Z (XOR3D2BWP20P90LVT)              0.04       0.40 f
+  conv_pool_inst/U5990/Z (XOR3D2BWP20P90LVT)              0.03       0.43 f
+  conv_pool_inst/U5034/ZN (CKND2D1BWP16P90)               0.02       0.45 r
+  conv_pool_inst/U18245/ZN (OAI21D4BWP16P90LVT)           0.01       0.46 f
+  conv_pool_inst/U18244/ZN (CKND2BWP20P90LVT)             0.01       0.46 r
+  conv_pool_inst/U13784/Z (OA21D1BWP20P90)                0.02       0.48 r
+  conv_pool_inst/U2631/Z (XOR2D2BWP16P90LVT)              0.02       0.50 r
+  conv_pool_inst/U2661/ZN (OAI21D2BWP16P90)               0.01       0.51 f
+  conv_pool_inst/U17927/ZN (IND4D4BWP16P90LVT)            0.01       0.52 r
+  conv_pool_inst/U18487/ZN (IND2D4BWP16P90LVT)            0.01       0.53 f
+  conv_pool_inst/U18453/ZN (ND2D2BWP16P90LVT)             0.00       0.54 r
+  conv_pool_inst/c2_00_regx1x/D (DFQD2BWP16P90)           0.00       0.54 r
+  data arrival time                                                  0.54
+
+  clock CLK (rise edge)                                   0.55       0.55
+  clock network delay (ideal)                             0.00       0.55
+  conv_pool_inst/c2_00_regx1x/CP (DFQD2BWP16P90)          0.00       0.55 r
+  library setup time                                     -0.01       0.54
+  data required time                                                 0.54
+  --------------------------------------------------------------------------
+  data required time                                                 0.54
+  data arrival time                                                 -0.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

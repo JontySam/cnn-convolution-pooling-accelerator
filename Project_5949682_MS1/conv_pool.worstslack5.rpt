@@ -1,0 +1,902 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : conv_pool
+Version: U-2022.12-SP5
+Date   : Thu May  8 16:12:04 2025
+****************************************
+
+Operating Conditions: tt0p8v25c   Library: N16ADFP_StdCelltt0p8v25c_ccs
+Wire Load Model Mode: segmented
+
+  Startpoint: conv_kernel_0[67]
+              (input port clocked by CLK)
+  Endpoint: tmp0_regx1x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.02       0.02 r
+  conv_kernel_0[67] (in)                   0.03       0.05 r
+  U7982/ZN (XNR2D2BWP20P90)                0.09       0.14 r
+  U1542/ZN (CKND2D1BWP16P90)               0.02       0.17 f
+  U1532/Z (BUFFD4BWP16P90)                 0.03       0.20 f
+  U3339/Z (AO21D1BWP20P90)                 0.03       0.23 f
+  U11009/S (FA1D1BWP20P90)                 0.06       0.29 r
+  U12351/S (FA1D1BWP20P90)                 0.05       0.34 f
+  U12359/S (FA1D1BWP20P90)                 0.05       0.39 r
+  U12360/S (FA1D1BWP20P90)                 0.05       0.44 f
+  U12347/S (FA1D1BWP20P90)                 0.05       0.49 r
+  U12361/S (FA1D1BWP20P90)                 0.05       0.54 f
+  U12362/CO (FA1D1BWP20P90)                0.03       0.57 f
+  U4732/ZN (NR2D1BWP20P90)                 0.02       0.59 r
+  U4595/ZN (INVD1BWP20P90)                 0.01       0.60 f
+  U4405/ZN (ND2D1BWP20P90)                 0.01       0.61 r
+  U4244/ZN (NR2D1BWP20P90)                 0.01       0.62 f
+  U1623/ZN (AOI21D1BWP16P90)               0.01       0.63 r
+  U12383/ZN (OAI21D1BWP16P90)              0.01       0.65 f
+  U1603/ZN (INVD1BWP20P90)                 0.01       0.66 r
+  U3978/Z (XOR2D1BWP20P90)                 0.02       0.68 f
+  U3895/ZN (AOI211D1BWP16P90)              0.01       0.69 r
+  U1592/ZN (OAI21D1BWP20P90)               0.02       0.70 f
+  U3854/ZN (NR3D2BWP16P90)                 0.02       0.73 r
+  U3846/ZN (AOI31D1BWP16P90)               0.02       0.75 f
+  U12408/ZN (MAOI222D1BWP16P90)            0.01       0.77 r
+  U12409/ZN (MAOI222D1BWP16P90)            0.01       0.78 f
+  U12410/ZN (MAOI222D1BWP16P90)            0.01       0.79 r
+  U3751/ZN (MAOI222D1BWP20P90LVT)          0.01       0.80 f
+  U12412/ZN (OAI21D1BWP16P90)              0.01       0.82 r
+  U1265/ZN (AOAI211D2BWP16P90LVT)          0.03       0.84 f
+  U12418/ZN (MUX2ND2BWP16P90)              0.03       0.87 r
+  U13821/ZN (MAOI222D1BWP16P90)            0.02       0.89 f
+  U3695/ZN (OAI22D1BWP20P90)               0.01       0.90 r
+  U13826/ZN (OAI21D1BWP16P90)              0.01       0.92 f
+  U13829/ZN (AOI21D1BWP16P90)              0.01       0.93 r
+  U2042/ZN (OAI21D1BWP20P90LVT)            0.01       0.94 f
+  U13833/ZN (MAOI22D2BWP16P90)             0.01       0.95 r
+  U2039/ZN (ND2D2BWP16P90)                 0.02       0.97 f
+  U16893/ZN (OAI22D1BWP16P90)              0.01       0.98 r
+  tmp0_regx1x/D (DFQD1BWP20P90)            0.00       0.98 r
+  data arrival time                                   0.98
+
+  clock CLK (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  tmp0_regx1x/CP (DFQD1BWP20P90)           0.00       1.00 r
+  library setup time                      -0.02       0.98
+  data required time                                  0.98
+  -----------------------------------------------------------
+  data required time                                  0.98
+  data arrival time                                  -0.98
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: conv_kernel_1[57]
+              (input port clocked by CLK)
+  Endpoint: tmp1_regx3x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.02       0.02 r
+  conv_kernel_1[57] (in)                   0.04       0.06 r
+  U8044/ZN (XNR2D2BWP20P90)                0.09       0.14 r
+  U8120/ZN (ND2D1BWP16P90)                 0.02       0.16 f
+  U1476/Z (BUFFD2BWP16P90)                 0.05       0.21 f
+  U8121/ZN (OAI22D1BWP16P90)               0.03       0.24 r
+  U8437/S (FA1D1BWP20P90)                  0.05       0.29 f
+  U8499/CO (FA1D1BWP20P90)                 0.03       0.32 f
+  U8500/CO (FA1D1BWP20P90)                 0.04       0.36 f
+  U8487/CO (FA1D1BWP20P90)                 0.03       0.40 f
+  U8485/S (FA1D1BWP20P90)                  0.05       0.45 r
+  U8504/S (FA1D1BWP20P90)                  0.05       0.49 f
+  U8505/S (FA1D1BWP20P90)                  0.05       0.54 r
+  U4973/ZN (NR2D1BWP20P90)                 0.01       0.55 f
+  U4638/ZN (OAI21D1BWP20P90)               0.01       0.57 r
+  U4512/ZN (AOI21D1BWP20P90)               0.02       0.58 f
+  U4335/ZN (OAI21D1BWP20P90)               0.02       0.60 r
+  U4178/ZN (AOI21D1BWP16P90)               0.02       0.62 f
+  U2168/ZN (INVD1BWP20P90)                 0.02       0.63 r
+  U4094/ZN (AOI21D1BWP20P90)               0.02       0.65 f
+  U1553/Z (XOR2D1BWP20P90)                 0.03       0.68 r
+  U1593/ZN (OAI21D1BWP16P90)               0.01       0.69 f
+  U3869/ZN (ND2D1BWP20P90)                 0.01       0.70 r
+  U1563/ZN (CKNR2D2BWP16P90)               0.02       0.72 f
+  U3819/ZN (AOI21D1BWP20P90)               0.02       0.74 r
+  U9512/ZN (OAI22D1BWP16P90)               0.02       0.76 f
+  U3764/ZN (OAI21D1BWP16P90)               0.01       0.77 r
+  U3752/ZN (OAI22D1BWP20P90)               0.01       0.79 f
+  U3746/ZN (OAI21D1BWP16P90)               0.01       0.80 r
+  U9522/ZN (OAI21D1BWP16P90)               0.01       0.81 f
+  U3738/ZN (OAOI211D2BWP20P90LVT)          0.02       0.84 r
+  U2055/ZN (CKND2BWP16P90)                 0.02       0.85 f
+  U1264/ZN (ND2D1BWP16P90)                 0.01       0.87 r
+  U2049/ZN (INVD1BWP20P90)                 0.01       0.88 f
+  U10956/ZN (AOI21D1BWP16P90)              0.02       0.89 r
+  U10957/ZN (OAI22D1BWP16P90)              0.02       0.91 f
+  U3694/ZN (OAI21D1BWP16P90)               0.01       0.92 r
+  U10963/ZN (AOI21D1BWP16P90)              0.01       0.93 f
+  U2044/ZN (OAI21D1BWP20P90LVT)            0.01       0.94 r
+  U1564/ZN (MAOI22D1BWP20P90LVT)           0.01       0.95 f
+  U2041/ZN (INVD1BWP20P90LVT)              0.01       0.96 r
+  U3692/ZN (ND2D2BWP20P90LVT)              0.01       0.97 f
+  U10966/ZN (OAI22D1BWP16P90)              0.01       0.98 r
+  tmp1_regx3x/D (DFQD2BWP16P90)            0.00       0.98 r
+  data arrival time                                   0.98
+
+  clock CLK (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  tmp1_regx3x/CP (DFQD2BWP16P90)           0.00       1.00 r
+  library setup time                      -0.02       0.98
+  data required time                                  0.98
+  -----------------------------------------------------------
+  data required time                                  0.98
+  data arrival time                                  -0.98
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: conv_kernel_1[57]
+              (input port clocked by CLK)
+  Endpoint: tmp1_regx2x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.02       0.02 r
+  conv_kernel_1[57] (in)                   0.04       0.06 r
+  U8044/ZN (XNR2D2BWP20P90)                0.09       0.14 r
+  U8120/ZN (ND2D1BWP16P90)                 0.02       0.16 f
+  U1476/Z (BUFFD2BWP16P90)                 0.05       0.21 f
+  U8121/ZN (OAI22D1BWP16P90)               0.03       0.24 r
+  U8437/S (FA1D1BWP20P90)                  0.05       0.29 f
+  U8499/CO (FA1D1BWP20P90)                 0.03       0.32 f
+  U8500/CO (FA1D1BWP20P90)                 0.04       0.36 f
+  U8487/CO (FA1D1BWP20P90)                 0.03       0.40 f
+  U8485/S (FA1D1BWP20P90)                  0.05       0.45 r
+  U8504/S (FA1D1BWP20P90)                  0.05       0.49 f
+  U8505/S (FA1D1BWP20P90)                  0.05       0.54 r
+  U4973/ZN (NR2D1BWP20P90)                 0.01       0.55 f
+  U4638/ZN (OAI21D1BWP20P90)               0.01       0.57 r
+  U4512/ZN (AOI21D1BWP20P90)               0.02       0.58 f
+  U4335/ZN (OAI21D1BWP20P90)               0.02       0.60 r
+  U4178/ZN (AOI21D1BWP16P90)               0.02       0.62 f
+  U2168/ZN (INVD1BWP20P90)                 0.02       0.63 r
+  U4094/ZN (AOI21D1BWP20P90)               0.02       0.65 f
+  U1553/Z (XOR2D1BWP20P90)                 0.03       0.68 r
+  U1593/ZN (OAI21D1BWP16P90)               0.01       0.69 f
+  U3869/ZN (ND2D1BWP20P90)                 0.01       0.70 r
+  U1563/ZN (CKNR2D2BWP16P90)               0.02       0.72 f
+  U3819/ZN (AOI21D1BWP20P90)               0.02       0.74 r
+  U9512/ZN (OAI22D1BWP16P90)               0.02       0.76 f
+  U3764/ZN (OAI21D1BWP16P90)               0.01       0.77 r
+  U3752/ZN (OAI22D1BWP20P90)               0.01       0.79 f
+  U3746/ZN (OAI21D1BWP16P90)               0.01       0.80 r
+  U9522/ZN (OAI21D1BWP16P90)               0.01       0.81 f
+  U3738/ZN (OAOI211D2BWP20P90LVT)          0.02       0.84 r
+  U2055/ZN (CKND2BWP16P90)                 0.02       0.85 f
+  U1264/ZN (ND2D1BWP16P90)                 0.01       0.87 r
+  U2049/ZN (INVD1BWP20P90)                 0.01       0.88 f
+  U10956/ZN (AOI21D1BWP16P90)              0.02       0.89 r
+  U10957/ZN (OAI22D1BWP16P90)              0.02       0.91 f
+  U3694/ZN (OAI21D1BWP16P90)               0.01       0.92 r
+  U10963/ZN (AOI21D1BWP16P90)              0.01       0.93 f
+  U2044/ZN (OAI21D1BWP20P90LVT)            0.01       0.94 r
+  U1564/ZN (MAOI22D1BWP20P90LVT)           0.01       0.95 f
+  U2041/ZN (INVD1BWP20P90LVT)              0.01       0.96 r
+  U3692/ZN (ND2D2BWP20P90LVT)              0.01       0.97 f
+  U16889/ZN (OAI22D1BWP16P90)              0.01       0.98 r
+  tmp1_regx2x/D (DFQD2BWP16P90)            0.00       0.98 r
+  data arrival time                                   0.98
+
+  clock CLK (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  tmp1_regx2x/CP (DFQD2BWP16P90)           0.00       1.00 r
+  library setup time                      -0.02       0.98
+  data required time                                  0.98
+  -----------------------------------------------------------
+  data required time                                  0.98
+  data arrival time                                  -0.98
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: conv_kernel_1[57]
+              (input port clocked by CLK)
+  Endpoint: tmp1_regx1x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.02       0.02 r
+  conv_kernel_1[57] (in)                   0.04       0.06 r
+  U8044/ZN (XNR2D2BWP20P90)                0.09       0.14 r
+  U8120/ZN (ND2D1BWP16P90)                 0.02       0.16 f
+  U1476/Z (BUFFD2BWP16P90)                 0.05       0.21 f
+  U8121/ZN (OAI22D1BWP16P90)               0.03       0.24 r
+  U8437/S (FA1D1BWP20P90)                  0.05       0.29 f
+  U8499/CO (FA1D1BWP20P90)                 0.03       0.32 f
+  U8500/CO (FA1D1BWP20P90)                 0.04       0.36 f
+  U8487/CO (FA1D1BWP20P90)                 0.03       0.40 f
+  U8485/S (FA1D1BWP20P90)                  0.05       0.45 r
+  U8504/S (FA1D1BWP20P90)                  0.05       0.49 f
+  U8505/S (FA1D1BWP20P90)                  0.05       0.54 r
+  U4973/ZN (NR2D1BWP20P90)                 0.01       0.55 f
+  U4638/ZN (OAI21D1BWP20P90)               0.01       0.57 r
+  U4512/ZN (AOI21D1BWP20P90)               0.02       0.58 f
+  U4335/ZN (OAI21D1BWP20P90)               0.02       0.60 r
+  U4178/ZN (AOI21D1BWP16P90)               0.02       0.62 f
+  U2168/ZN (INVD1BWP20P90)                 0.02       0.63 r
+  U4094/ZN (AOI21D1BWP20P90)               0.02       0.65 f
+  U1553/Z (XOR2D1BWP20P90)                 0.03       0.68 r
+  U1593/ZN (OAI21D1BWP16P90)               0.01       0.69 f
+  U3869/ZN (ND2D1BWP20P90)                 0.01       0.70 r
+  U1563/ZN (CKNR2D2BWP16P90)               0.02       0.72 f
+  U3819/ZN (AOI21D1BWP20P90)               0.02       0.74 r
+  U9512/ZN (OAI22D1BWP16P90)               0.02       0.76 f
+  U3764/ZN (OAI21D1BWP16P90)               0.01       0.77 r
+  U3752/ZN (OAI22D1BWP20P90)               0.01       0.79 f
+  U3746/ZN (OAI21D1BWP16P90)               0.01       0.80 r
+  U9522/ZN (OAI21D1BWP16P90)               0.01       0.81 f
+  U3738/ZN (OAOI211D2BWP20P90LVT)          0.02       0.84 r
+  U2055/ZN (CKND2BWP16P90)                 0.02       0.85 f
+  U1264/ZN (ND2D1BWP16P90)                 0.01       0.87 r
+  U2049/ZN (INVD1BWP20P90)                 0.01       0.88 f
+  U10956/ZN (AOI21D1BWP16P90)              0.02       0.89 r
+  U10957/ZN (OAI22D1BWP16P90)              0.02       0.91 f
+  U3694/ZN (OAI21D1BWP16P90)               0.01       0.92 r
+  U10963/ZN (AOI21D1BWP16P90)              0.01       0.93 f
+  U2044/ZN (OAI21D1BWP20P90LVT)            0.01       0.94 r
+  U1564/ZN (MAOI22D1BWP20P90LVT)           0.01       0.95 f
+  U2041/ZN (INVD1BWP20P90LVT)              0.01       0.96 r
+  U3692/ZN (ND2D2BWP20P90LVT)              0.01       0.97 f
+  U16888/ZN (OAI22D1BWP16P90)              0.01       0.98 r
+  tmp1_regx1x/D (DFQD2BWP16P90)            0.00       0.98 r
+  data arrival time                                   0.98
+
+  clock CLK (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  tmp1_regx1x/CP (DFQD2BWP16P90)           0.00       1.00 r
+  library setup time                      -0.02       0.98
+  data required time                                  0.98
+  -----------------------------------------------------------
+  data required time                                  0.98
+  data arrival time                                  -0.98
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: conv_kernel_1[57]
+              (input port clocked by CLK)
+  Endpoint: tmp1_regx0x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.02       0.02 r
+  conv_kernel_1[57] (in)                   0.04       0.06 r
+  U8044/ZN (XNR2D2BWP20P90)                0.09       0.14 r
+  U8120/ZN (ND2D1BWP16P90)                 0.02       0.16 f
+  U1476/Z (BUFFD2BWP16P90)                 0.05       0.21 f
+  U8121/ZN (OAI22D1BWP16P90)               0.03       0.24 r
+  U8437/S (FA1D1BWP20P90)                  0.05       0.29 f
+  U8499/CO (FA1D1BWP20P90)                 0.03       0.32 f
+  U8500/CO (FA1D1BWP20P90)                 0.04       0.36 f
+  U8487/CO (FA1D1BWP20P90)                 0.03       0.40 f
+  U8485/S (FA1D1BWP20P90)                  0.05       0.45 r
+  U8504/S (FA1D1BWP20P90)                  0.05       0.49 f
+  U8505/S (FA1D1BWP20P90)                  0.05       0.54 r
+  U4973/ZN (NR2D1BWP20P90)                 0.01       0.55 f
+  U4638/ZN (OAI21D1BWP20P90)               0.01       0.57 r
+  U4512/ZN (AOI21D1BWP20P90)               0.02       0.58 f
+  U4335/ZN (OAI21D1BWP20P90)               0.02       0.60 r
+  U4178/ZN (AOI21D1BWP16P90)               0.02       0.62 f
+  U2168/ZN (INVD1BWP20P90)                 0.02       0.63 r
+  U4094/ZN (AOI21D1BWP20P90)               0.02       0.65 f
+  U1553/Z (XOR2D1BWP20P90)                 0.03       0.68 r
+  U1593/ZN (OAI21D1BWP16P90)               0.01       0.69 f
+  U3869/ZN (ND2D1BWP20P90)                 0.01       0.70 r
+  U1563/ZN (CKNR2D2BWP16P90)               0.02       0.72 f
+  U3819/ZN (AOI21D1BWP20P90)               0.02       0.74 r
+  U9512/ZN (OAI22D1BWP16P90)               0.02       0.76 f
+  U3764/ZN (OAI21D1BWP16P90)               0.01       0.77 r
+  U3752/ZN (OAI22D1BWP20P90)               0.01       0.79 f
+  U3746/ZN (OAI21D1BWP16P90)               0.01       0.80 r
+  U9522/ZN (OAI21D1BWP16P90)               0.01       0.81 f
+  U3738/ZN (OAOI211D2BWP20P90LVT)          0.02       0.84 r
+  U2055/ZN (CKND2BWP16P90)                 0.02       0.85 f
+  U1264/ZN (ND2D1BWP16P90)                 0.01       0.87 r
+  U2049/ZN (INVD1BWP20P90)                 0.01       0.88 f
+  U10956/ZN (AOI21D1BWP16P90)              0.02       0.89 r
+  U10957/ZN (OAI22D1BWP16P90)              0.02       0.91 f
+  U3694/ZN (OAI21D1BWP16P90)               0.01       0.92 r
+  U10963/ZN (AOI21D1BWP16P90)              0.01       0.93 f
+  U2044/ZN (OAI21D1BWP20P90LVT)            0.01       0.94 r
+  U1564/ZN (MAOI22D1BWP20P90LVT)           0.01       0.95 f
+  U2041/ZN (INVD1BWP20P90LVT)              0.01       0.96 r
+  U3692/ZN (ND2D2BWP20P90LVT)              0.01       0.97 f
+  U10971/ZN (OAI22D1BWP16P90)              0.01       0.98 r
+  tmp1_regx0x/D (DFQD2BWP16P90)            0.00       0.98 r
+  data arrival time                                   0.98
+
+  clock CLK (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  tmp1_regx0x/CP (DFQD2BWP16P90)           0.00       1.00 r
+  library setup time                      -0.02       0.98
+  data required time                                  0.98
+  -----------------------------------------------------------
+  data required time                                  0.98
+  data arrival time                                  -0.98
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: req_addr_s3_regx14x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: output_addr_0[14]
+            (output port clocked by CLK)
+  Path Group: output
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                       Incr       Path
+  --------------------------------------------------------------
+  clock CLK (rise edge)                       0.00       0.00
+  clock network delay (ideal)                 0.00       0.00
+  req_addr_s3_regx14x/CP (DFQD1BWP20P90)      0.00       0.00 r
+  req_addr_s3_regx14x/Q (DFQD1BWP20P90)       0.06       0.06 f
+  U13844/Z (CKBD1BWP20P90)                    0.02       0.08 f
+  output_addr_0[14] (out)                     0.00       0.08 f
+  data arrival time                                      0.08
+
+  clock CLK (rise edge)                       1.00       1.00
+  clock network delay (ideal)                 0.00       1.00
+  output external delay                      -0.06       0.94
+  data required time                                     0.94
+  --------------------------------------------------------------
+  data required time                                     0.94
+  data arrival time                                     -0.08
+  --------------------------------------------------------------
+  slack (MET)                                            0.86
+
+
+  Startpoint: req_addr_s3_regx14x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: output_addr_2[14]
+            (output port clocked by CLK)
+  Path Group: output
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                       Incr       Path
+  --------------------------------------------------------------
+  clock CLK (rise edge)                       0.00       0.00
+  clock network delay (ideal)                 0.00       0.00
+  req_addr_s3_regx14x/CP (DFQD1BWP20P90)      0.00       0.00 r
+  req_addr_s3_regx14x/Q (DFQD1BWP20P90)       0.06       0.06 f
+  U13845/Z (CKBD1BWP20P90)                    0.02       0.08 f
+  output_addr_2[14] (out)                     0.00       0.08 f
+  data arrival time                                      0.08
+
+  clock CLK (rise edge)                       1.00       1.00
+  clock network delay (ideal)                 0.00       1.00
+  output external delay                      -0.06       0.94
+  data required time                                     0.94
+  --------------------------------------------------------------
+  data required time                                     0.94
+  data arrival time                                     -0.08
+  --------------------------------------------------------------
+  slack (MET)                                            0.86
+
+
+  Startpoint: req_addr_s3_regx2x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: output_addr_0[2]
+            (output port clocked by CLK)
+  Path Group: output
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                      Incr       Path
+  -------------------------------------------------------------
+  clock CLK (rise edge)                      0.00       0.00
+  clock network delay (ideal)                0.00       0.00
+  req_addr_s3_regx2x/CP (DFQD2BWP16P90)      0.00       0.00 r
+  req_addr_s3_regx2x/Q (DFQD2BWP16P90)       0.05       0.05 f
+  U13866/Z (CKBD1BWP20P90)                   0.02       0.07 f
+  output_addr_0[2] (out)                     0.00       0.07 f
+  data arrival time                                     0.07
+
+  clock CLK (rise edge)                      1.00       1.00
+  clock network delay (ideal)                0.00       1.00
+  output external delay                     -0.06       0.94
+  data required time                                    0.94
+  -------------------------------------------------------------
+  data required time                                    0.94
+  data arrival time                                    -0.07
+  -------------------------------------------------------------
+  slack (MET)                                           0.87
+
+
+  Startpoint: req_addr_s3_regx1x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: output_addr_0[1]
+            (output port clocked by CLK)
+  Path Group: output
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                      Incr       Path
+  -------------------------------------------------------------
+  clock CLK (rise edge)                      0.00       0.00
+  clock network delay (ideal)                0.00       0.00
+  req_addr_s3_regx1x/CP (DFQD2BWP16P90)      0.00       0.00 r
+  req_addr_s3_regx1x/Q (DFQD2BWP16P90)       0.05       0.05 f
+  U13869/Z (CKBD1BWP20P90)                   0.02       0.07 f
+  output_addr_0[1] (out)                     0.00       0.07 f
+  data arrival time                                     0.07
+
+  clock CLK (rise edge)                      1.00       1.00
+  clock network delay (ideal)                0.00       1.00
+  output external delay                     -0.06       0.94
+  data required time                                    0.94
+  -------------------------------------------------------------
+  data required time                                    0.94
+  data arrival time                                    -0.07
+  -------------------------------------------------------------
+  slack (MET)                                           0.87
+
+
+  Startpoint: req_addr_s3_regx0x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: output_addr_0[0]
+            (output port clocked by CLK)
+  Path Group: output
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                      Incr       Path
+  -------------------------------------------------------------
+  clock CLK (rise edge)                      0.00       0.00
+  clock network delay (ideal)                0.00       0.00
+  req_addr_s3_regx0x/CP (DFQD2BWP16P90)      0.00       0.00 r
+  req_addr_s3_regx0x/Q (DFQD2BWP16P90)       0.05       0.05 f
+  U13868/Z (CKBD1BWP20P90)                   0.02       0.07 f
+  output_addr_0[0] (out)                     0.00       0.07 f
+  data arrival time                                     0.07
+
+  clock CLK (rise edge)                      1.00       1.00
+  clock network delay (ideal)                0.00       1.00
+  output external delay                     -0.06       0.94
+  data required time                                    0.94
+  -------------------------------------------------------------
+  data required time                                    0.94
+  data arrival time                                    -0.07
+  -------------------------------------------------------------
+  slack (MET)                                           0.87
+
+
+  Startpoint: block_s1_regx48x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: tmp0_regx1x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  block_s1_regx48x/CP (DFQD2BWP16P90)      0.00       0.00 r
+  block_s1_regx48x/Q (DFQD2BWP16P90)       0.12       0.12 f
+  U7177/Z (BUFFD4BWP20P90)                 0.08       0.20 f
+  U6706/ZN (IND2D1BWP20P90)                0.03       0.22 f
+  U2497/ZN (OAI22D1BWP20P90)               0.02       0.24 r
+  U13420/Z (XOR2D1BWP20P90)                0.03       0.27 f
+  U2267/Z (XOR2D1BWP20P90)                 0.03       0.30 r
+  U13473/S (FA1D1BWP20P90)                 0.05       0.35 f
+  U13575/CO (FA1D1BWP20P90)                0.03       0.38 f
+  U5166/CO (FA1D1BWP16P90)                 0.03       0.41 f
+  U5137/CO (FA1D1BWP16P90)                 0.03       0.44 f
+  U13549/CO (FA1D1BWP20P90)                0.03       0.48 f
+  U13527/S (FA1D1BWP20P90)                 0.05       0.53 r
+  U1351/S (FA1D1BWP20P90)                  0.05       0.57 f
+  U2256/ZN (NR2D1BWP20P90)                 0.02       0.59 r
+  U4496/ZN (NR2D1BWP20P90)                 0.01       0.60 f
+  U2177/ZN (AOI21D1BWP16P90)               0.01       0.61 r
+  U1318/ZN (INVD1BWP20P90)                 0.02       0.63 f
+  U2139/ZN (AOI21D1BWP20P90)               0.02       0.65 r
+  U2106/Z (XOR2D1BWP20P90)                 0.03       0.68 f
+  U3878/ZN (AOI211D1BWP16P90)              0.02       0.69 r
+  U2084/ZN (ND2D1BWP20P90)                 0.01       0.70 f
+  U1580/ZN (NR2D1BWP20P90LVT)              0.01       0.72 r
+  U2071/ZN (AOI21D1BWP16P90)               0.02       0.74 f
+  U3795/ZN (OAI22D1BWP20P90)               0.02       0.75 r
+  U3769/ZN (OAI21D1BWP16P90)               0.01       0.77 f
+  U3755/ZN (AOI21D1BWP20P90)               0.01       0.78 r
+  U3748/ZN (OAI21D1BWP16P90)               0.02       0.80 f
+  U3742/ZN (AOI21D1BWP20P90)               0.01       0.81 r
+  U13815/ZN (NR2D1BWP16P90)                0.01       0.82 f
+  U1269/ZN (OAI21D1BWP16P90)               0.02       0.84 r
+  U2052/ZN (CKND2BWP16P90)                 0.01       0.85 f
+  U2050/ZN (ND2D1BWP20P90)                 0.01       0.86 r
+  U1262/ZN (OAI21D1BWP16P90)               0.01       0.87 f
+  U13821/ZN (MAOI222D1BWP16P90)            0.02       0.89 r
+  U13825/ZN (AOI21D1BWP16P90)              0.01       0.90 f
+  U13826/ZN (OAI21D1BWP16P90)              0.01       0.91 r
+  U13829/ZN (AOI21D1BWP16P90)              0.01       0.93 f
+  U2042/ZN (OAI21D1BWP20P90LVT)            0.01       0.94 r
+  U13833/ZN (MAOI22D2BWP16P90)             0.01       0.95 f
+  U13834/ZN (CKND2BWP16P90)                0.01       0.96 r
+  U2038/ZN (ND2D4BWP16P90)                 0.01       0.97 f
+  U16893/ZN (OAI22D1BWP16P90)              0.01       0.98 r
+  tmp0_regx1x/D (DFQD1BWP20P90)            0.00       0.98 r
+  data arrival time                                   0.98
+
+  clock CLK (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  tmp0_regx1x/CP (DFQD1BWP20P90)           0.00       1.00 r
+  library setup time                      -0.02       0.98
+  data required time                                  0.98
+  -----------------------------------------------------------
+  data required time                                  0.98
+  data arrival time                                  -0.98
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: block_s1_regx48x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: tmp0_regx3x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  block_s1_regx48x/CP (DFQD2BWP16P90)      0.00       0.00 r
+  block_s1_regx48x/Q (DFQD2BWP16P90)       0.12       0.12 f
+  U7177/Z (BUFFD4BWP20P90)                 0.08       0.20 f
+  U6706/ZN (IND2D1BWP20P90)                0.03       0.22 f
+  U2497/ZN (OAI22D1BWP20P90)               0.02       0.24 r
+  U13420/Z (XOR2D1BWP20P90)                0.03       0.27 f
+  U2267/Z (XOR2D1BWP20P90)                 0.03       0.30 r
+  U13473/S (FA1D1BWP20P90)                 0.05       0.35 f
+  U13575/CO (FA1D1BWP20P90)                0.03       0.38 f
+  U5166/CO (FA1D1BWP16P90)                 0.03       0.41 f
+  U5137/CO (FA1D1BWP16P90)                 0.03       0.44 f
+  U13549/CO (FA1D1BWP20P90)                0.03       0.48 f
+  U13527/S (FA1D1BWP20P90)                 0.05       0.53 r
+  U1351/S (FA1D1BWP20P90)                  0.05       0.57 f
+  U2256/ZN (NR2D1BWP20P90)                 0.02       0.59 r
+  U4496/ZN (NR2D1BWP20P90)                 0.01       0.60 f
+  U2177/ZN (AOI21D1BWP16P90)               0.01       0.61 r
+  U1318/ZN (INVD1BWP20P90)                 0.02       0.63 f
+  U2139/ZN (AOI21D1BWP20P90)               0.02       0.65 r
+  U2106/Z (XOR2D1BWP20P90)                 0.03       0.68 f
+  U3878/ZN (AOI211D1BWP16P90)              0.02       0.69 r
+  U2084/ZN (ND2D1BWP20P90)                 0.01       0.70 f
+  U1580/ZN (NR2D1BWP20P90LVT)              0.01       0.72 r
+  U2071/ZN (AOI21D1BWP16P90)               0.02       0.74 f
+  U3795/ZN (OAI22D1BWP20P90)               0.02       0.75 r
+  U3769/ZN (OAI21D1BWP16P90)               0.01       0.77 f
+  U3755/ZN (AOI21D1BWP20P90)               0.01       0.78 r
+  U3748/ZN (OAI21D1BWP16P90)               0.02       0.80 f
+  U3742/ZN (AOI21D1BWP20P90)               0.01       0.81 r
+  U13815/ZN (NR2D1BWP16P90)                0.01       0.82 f
+  U1269/ZN (OAI21D1BWP16P90)               0.02       0.84 r
+  U2052/ZN (CKND2BWP16P90)                 0.01       0.85 f
+  U2050/ZN (ND2D1BWP20P90)                 0.01       0.86 r
+  U1262/ZN (OAI21D1BWP16P90)               0.01       0.87 f
+  U13821/ZN (MAOI222D1BWP16P90)            0.02       0.89 r
+  U13825/ZN (AOI21D1BWP16P90)              0.01       0.90 f
+  U13826/ZN (OAI21D1BWP16P90)              0.01       0.91 r
+  U13829/ZN (AOI21D1BWP16P90)              0.01       0.93 f
+  U2042/ZN (OAI21D1BWP20P90LVT)            0.01       0.94 r
+  U13833/ZN (MAOI22D2BWP16P90)             0.01       0.95 f
+  U13834/ZN (CKND2BWP16P90)                0.01       0.96 r
+  U2038/ZN (ND2D4BWP16P90)                 0.01       0.97 f
+  U16895/ZN (OAI22D1BWP16P90)              0.01       0.98 r
+  tmp0_regx3x/D (DFQD2BWP16P90)            0.00       0.98 r
+  data arrival time                                   0.98
+
+  clock CLK (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  tmp0_regx3x/CP (DFQD2BWP16P90)           0.00       1.00 r
+  library setup time                      -0.02       0.98
+  data required time                                  0.98
+  -----------------------------------------------------------
+  data required time                                  0.98
+  data arrival time                                  -0.98
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: block_s1_regx48x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: tmp0_regx4x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  block_s1_regx48x/CP (DFQD2BWP16P90)      0.00       0.00 r
+  block_s1_regx48x/Q (DFQD2BWP16P90)       0.12       0.12 f
+  U7177/Z (BUFFD4BWP20P90)                 0.08       0.20 f
+  U6706/ZN (IND2D1BWP20P90)                0.03       0.22 f
+  U2497/ZN (OAI22D1BWP20P90)               0.02       0.24 r
+  U13420/Z (XOR2D1BWP20P90)                0.03       0.27 f
+  U2267/Z (XOR2D1BWP20P90)                 0.03       0.30 r
+  U13473/S (FA1D1BWP20P90)                 0.05       0.35 f
+  U13575/CO (FA1D1BWP20P90)                0.03       0.38 f
+  U5166/CO (FA1D1BWP16P90)                 0.03       0.41 f
+  U5137/CO (FA1D1BWP16P90)                 0.03       0.44 f
+  U13549/CO (FA1D1BWP20P90)                0.03       0.48 f
+  U13527/S (FA1D1BWP20P90)                 0.05       0.53 r
+  U1351/S (FA1D1BWP20P90)                  0.05       0.57 f
+  U2256/ZN (NR2D1BWP20P90)                 0.02       0.59 r
+  U4496/ZN (NR2D1BWP20P90)                 0.01       0.60 f
+  U2177/ZN (AOI21D1BWP16P90)               0.01       0.61 r
+  U1318/ZN (INVD1BWP20P90)                 0.02       0.63 f
+  U2139/ZN (AOI21D1BWP20P90)               0.02       0.65 r
+  U2106/Z (XOR2D1BWP20P90)                 0.03       0.68 f
+  U3878/ZN (AOI211D1BWP16P90)              0.02       0.69 r
+  U2084/ZN (ND2D1BWP20P90)                 0.01       0.70 f
+  U1580/ZN (NR2D1BWP20P90LVT)              0.01       0.72 r
+  U2071/ZN (AOI21D1BWP16P90)               0.02       0.74 f
+  U3795/ZN (OAI22D1BWP20P90)               0.02       0.75 r
+  U3769/ZN (OAI21D1BWP16P90)               0.01       0.77 f
+  U3755/ZN (AOI21D1BWP20P90)               0.01       0.78 r
+  U3748/ZN (OAI21D1BWP16P90)               0.02       0.80 f
+  U3742/ZN (AOI21D1BWP20P90)               0.01       0.81 r
+  U13815/ZN (NR2D1BWP16P90)                0.01       0.82 f
+  U1269/ZN (OAI21D1BWP16P90)               0.02       0.84 r
+  U2052/ZN (CKND2BWP16P90)                 0.01       0.85 f
+  U2050/ZN (ND2D1BWP20P90)                 0.01       0.86 r
+  U1262/ZN (OAI21D1BWP16P90)               0.01       0.87 f
+  U13821/ZN (MAOI222D1BWP16P90)            0.02       0.89 r
+  U13825/ZN (AOI21D1BWP16P90)              0.01       0.90 f
+  U13826/ZN (OAI21D1BWP16P90)              0.01       0.91 r
+  U13829/ZN (AOI21D1BWP16P90)              0.01       0.93 f
+  U2042/ZN (OAI21D1BWP20P90LVT)            0.01       0.94 r
+  U13833/ZN (MAOI22D2BWP16P90)             0.01       0.95 f
+  U13834/ZN (CKND2BWP16P90)                0.01       0.96 r
+  U2038/ZN (ND2D4BWP16P90)                 0.01       0.97 f
+  U16896/ZN (OAI22D1BWP16P90)              0.01       0.98 r
+  tmp0_regx4x/D (DFQD2BWP16P90)            0.00       0.98 r
+  data arrival time                                   0.98
+
+  clock CLK (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  tmp0_regx4x/CP (DFQD2BWP16P90)           0.00       1.00 r
+  library setup time                      -0.02       0.98
+  data required time                                  0.98
+  -----------------------------------------------------------
+  data required time                                  0.98
+  data arrival time                                  -0.98
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: block_s1_regx48x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: tmp0_regx2x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  block_s1_regx48x/CP (DFQD2BWP16P90)      0.00       0.00 r
+  block_s1_regx48x/Q (DFQD2BWP16P90)       0.12       0.12 f
+  U7177/Z (BUFFD4BWP20P90)                 0.08       0.20 f
+  U6706/ZN (IND2D1BWP20P90)                0.03       0.22 f
+  U2497/ZN (OAI22D1BWP20P90)               0.02       0.24 r
+  U13420/Z (XOR2D1BWP20P90)                0.03       0.27 f
+  U2267/Z (XOR2D1BWP20P90)                 0.03       0.30 r
+  U13473/S (FA1D1BWP20P90)                 0.05       0.35 f
+  U13575/CO (FA1D1BWP20P90)                0.03       0.38 f
+  U5166/CO (FA1D1BWP16P90)                 0.03       0.41 f
+  U5137/CO (FA1D1BWP16P90)                 0.03       0.44 f
+  U13549/CO (FA1D1BWP20P90)                0.03       0.48 f
+  U13527/S (FA1D1BWP20P90)                 0.05       0.53 r
+  U1351/S (FA1D1BWP20P90)                  0.05       0.57 f
+  U2256/ZN (NR2D1BWP20P90)                 0.02       0.59 r
+  U4496/ZN (NR2D1BWP20P90)                 0.01       0.60 f
+  U2177/ZN (AOI21D1BWP16P90)               0.01       0.61 r
+  U1318/ZN (INVD1BWP20P90)                 0.02       0.63 f
+  U2139/ZN (AOI21D1BWP20P90)               0.02       0.65 r
+  U2106/Z (XOR2D1BWP20P90)                 0.03       0.68 f
+  U3878/ZN (AOI211D1BWP16P90)              0.02       0.69 r
+  U2084/ZN (ND2D1BWP20P90)                 0.01       0.70 f
+  U1580/ZN (NR2D1BWP20P90LVT)              0.01       0.72 r
+  U2071/ZN (AOI21D1BWP16P90)               0.02       0.74 f
+  U3795/ZN (OAI22D1BWP20P90)               0.02       0.75 r
+  U3769/ZN (OAI21D1BWP16P90)               0.01       0.77 f
+  U3755/ZN (AOI21D1BWP20P90)               0.01       0.78 r
+  U3748/ZN (OAI21D1BWP16P90)               0.02       0.80 f
+  U3742/ZN (AOI21D1BWP20P90)               0.01       0.81 r
+  U13815/ZN (NR2D1BWP16P90)                0.01       0.82 f
+  U1269/ZN (OAI21D1BWP16P90)               0.02       0.84 r
+  U2052/ZN (CKND2BWP16P90)                 0.01       0.85 f
+  U2050/ZN (ND2D1BWP20P90)                 0.01       0.86 r
+  U1262/ZN (OAI21D1BWP16P90)               0.01       0.87 f
+  U13821/ZN (MAOI222D1BWP16P90)            0.02       0.89 r
+  U13825/ZN (AOI21D1BWP16P90)              0.01       0.90 f
+  U13826/ZN (OAI21D1BWP16P90)              0.01       0.91 r
+  U13829/ZN (AOI21D1BWP16P90)              0.01       0.93 f
+  U2042/ZN (OAI21D1BWP20P90LVT)            0.01       0.94 r
+  U13833/ZN (MAOI22D2BWP16P90)             0.01       0.95 f
+  U13834/ZN (CKND2BWP16P90)                0.01       0.96 r
+  U2038/ZN (ND2D4BWP16P90)                 0.01       0.97 f
+  U16894/ZN (OAI22D1BWP16P90)              0.01       0.98 r
+  tmp0_regx2x/D (DFQD2BWP16P90)            0.00       0.98 r
+  data arrival time                                   0.98
+
+  clock CLK (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  tmp0_regx2x/CP (DFQD2BWP16P90)           0.00       1.00 r
+  library setup time                      -0.02       0.98
+  data required time                                  0.98
+  -----------------------------------------------------------
+  data required time                                  0.98
+  data arrival time                                  -0.98
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: block_s1_regx48x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: tmp0_regx0x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  conv_pool          ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  block_s1_regx48x/CP (DFQD2BWP16P90)      0.00       0.00 r
+  block_s1_regx48x/Q (DFQD2BWP16P90)       0.12       0.12 f
+  U7177/Z (BUFFD4BWP20P90)                 0.08       0.20 f
+  U6706/ZN (IND2D1BWP20P90)                0.03       0.22 f
+  U2497/ZN (OAI22D1BWP20P90)               0.02       0.24 r
+  U13420/Z (XOR2D1BWP20P90)                0.03       0.27 f
+  U2267/Z (XOR2D1BWP20P90)                 0.03       0.30 r
+  U13473/S (FA1D1BWP20P90)                 0.05       0.35 f
+  U13575/CO (FA1D1BWP20P90)                0.03       0.38 f
+  U5166/CO (FA1D1BWP16P90)                 0.03       0.41 f
+  U5137/CO (FA1D1BWP16P90)                 0.03       0.44 f
+  U13549/CO (FA1D1BWP20P90)                0.03       0.48 f
+  U13527/S (FA1D1BWP20P90)                 0.05       0.53 r
+  U1351/S (FA1D1BWP20P90)                  0.05       0.57 f
+  U2256/ZN (NR2D1BWP20P90)                 0.02       0.59 r
+  U4496/ZN (NR2D1BWP20P90)                 0.01       0.60 f
+  U2177/ZN (AOI21D1BWP16P90)               0.01       0.61 r
+  U1318/ZN (INVD1BWP20P90)                 0.02       0.63 f
+  U2139/ZN (AOI21D1BWP20P90)               0.02       0.65 r
+  U2106/Z (XOR2D1BWP20P90)                 0.03       0.68 f
+  U3878/ZN (AOI211D1BWP16P90)              0.02       0.69 r
+  U2084/ZN (ND2D1BWP20P90)                 0.01       0.70 f
+  U1580/ZN (NR2D1BWP20P90LVT)              0.01       0.72 r
+  U2071/ZN (AOI21D1BWP16P90)               0.02       0.74 f
+  U3795/ZN (OAI22D1BWP20P90)               0.02       0.75 r
+  U3769/ZN (OAI21D1BWP16P90)               0.01       0.77 f
+  U3755/ZN (AOI21D1BWP20P90)               0.01       0.78 r
+  U3748/ZN (OAI21D1BWP16P90)               0.02       0.80 f
+  U3742/ZN (AOI21D1BWP20P90)               0.01       0.81 r
+  U13815/ZN (NR2D1BWP16P90)                0.01       0.82 f
+  U1269/ZN (OAI21D1BWP16P90)               0.02       0.84 r
+  U2052/ZN (CKND2BWP16P90)                 0.01       0.85 f
+  U2050/ZN (ND2D1BWP20P90)                 0.01       0.86 r
+  U1262/ZN (OAI21D1BWP16P90)               0.01       0.87 f
+  U13821/ZN (MAOI222D1BWP16P90)            0.02       0.89 r
+  U13825/ZN (AOI21D1BWP16P90)              0.01       0.90 f
+  U13826/ZN (OAI21D1BWP16P90)              0.01       0.91 r
+  U13829/ZN (AOI21D1BWP16P90)              0.01       0.93 f
+  U2042/ZN (OAI21D1BWP20P90LVT)            0.01       0.94 r
+  U13833/ZN (MAOI22D2BWP16P90)             0.01       0.95 f
+  U13834/ZN (CKND2BWP16P90)                0.01       0.96 r
+  U2038/ZN (ND2D4BWP16P90)                 0.01       0.97 f
+  U13839/ZN (OAI22D1BWP16P90)              0.01       0.98 r
+  tmp0_regx0x/D (DFQD2BWP16P90)            0.00       0.98 r
+  data arrival time                                   0.98
+
+  clock CLK (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  tmp0_regx0x/CP (DFQD2BWP16P90)           0.00       1.00 r
+  library setup time                      -0.02       0.98
+  data required time                                  0.98
+  -----------------------------------------------------------
+  data required time                                  0.98
+  data arrival time                                  -0.98
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

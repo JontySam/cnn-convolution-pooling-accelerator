@@ -1,0 +1,109 @@
+ 
+****************************************
+Report : qor
+Design : full_chip_conv_pool
+Version: U-2022.12-SP5
+Date   : Fri May  9 04:09:07 2025
+****************************************
+
+
+  Timing Path Group 'inputs'
+  -----------------------------------
+  Levels of Logic:              24.00
+  Critical Path Length:          0.52
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:      0.55
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'output'
+  -----------------------------------
+  Levels of Logic:               1.00
+  Critical Path Length:          0.08
+  Critical Path Slack:           0.41
+  Critical Path Clk Period:      0.55
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'reg2reg'
+  -----------------------------------
+  Levels of Logic:              23.00
+  Critical Path Length:          0.53
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:      0.55
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          1
+  Hierarchical Port Count:        440
+  Leaf Cell Count:              17662
+  Buf/Inv Cell Count:            1181
+  Buf Cell Count:                 141
+  Inv Cell Count:                1040
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:     17312
+  Sequential Cell Count:          350
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:     9064.224245
+  Noncombinational Area:   326.592004
+  Buf/Inv Area:            231.413766
+  Total Buffer Area:            56.35
+  Total Inverter Area:         175.06
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:              9390.816249
+  Design Area:            9390.816249
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:         22023
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: ece-brig
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.01
+  Logic Optimization:                  1.25
+  Mapping Optimization:               57.11
+  -----------------------------------------
+  Overall Compile Time:              136.00
+  Overall Compile Wall Clock Time:   138.71
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

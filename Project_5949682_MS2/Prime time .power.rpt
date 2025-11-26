@@ -1,0 +1,40 @@
+Information: Reading file conv_pool.vcd to annotate toggle rates on the design...
+Information: Reading vcd file '/home/class/chint078/labs/vda2/PT_shell/inputs/conv_pool.vcd'
+Error: No activity is available in the VCD file for the given time interval for power calculation. (PWR-255)
+Error: No switching activity has been annotated.  (PSW-130)
+Warning: Neither event file or switching activity data present for power estimation. The command will propagate switching activity values for power calculation.  (PWR-246)
+Information: Running switching activity propagation with 4 threads!
+Information: Running averaged power analysis... (PWR-601)
+Information: Running power calculation with 4 threads. (PWR-602)
+****************************************
+Report : Averaged Power
+Design : conv_pool
+Version: P-2019.03-SP5
+Date   : Fri May  9 12:41:18 2025
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network           1.678e-03    0.0000    0.0000 1.678e-03 ( 5.57%)  i
+register                9.462e-05 1.911e-04 1.055e-06 2.868e-04 ( 0.95%)  
+combinational              0.0160    0.0121 4.945e-05    0.0281 (93.47%)  
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  =    0.0123   (40.73%)
+  Cell Internal Power  =    0.0178   (59.10%)
+  Cell Leakage Power   = 5.050e-05   ( 0.17%)
+                         ---------
+Total Power            =    0.0301  (100.00%)
+
+1
